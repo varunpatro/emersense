@@ -23,6 +23,12 @@ var routes = Routes{
 		controllers.Index,
 	},
 	Route{
+		"Index",
+		"GET",
+		"/user",
+		controllers.UserIndex,
+	},
+	Route{
 		"UserAll",
 		"GET",
 		"/user/all",
@@ -57,5 +63,11 @@ var routes = Routes{
 		"GET",
 		"/emergency/respond/unsafe",
 		controllers.EmergencyRespondUnsafe,
+	},
+	Route{
+		"LocationUpdate",
+		"GET",
+		"/location/update",
+		controllers.LocationUpdate,
 	},
 }

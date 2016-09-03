@@ -125,7 +125,7 @@ func EmergencyRespondSafe(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	data.UpdateStatus(user.Id, true, emergency.Sheet)
+	data.UpdateStatus(user.Id, true, emergency.SheetTitle)
 
 	w.Write([]byte("safely responded"))
 	//delete(uuidToEmergency, uuidStr)
@@ -163,7 +163,7 @@ func EmergencyRespondUnsafe(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	data.UpdateStatus(user.Id, false, emergency.Sheet)
+	data.UpdateStatus(user.Id, false, emergency.SheetTitle)
 
 	w.Write([]byte("oh no! help coming to you soon!"))
 	//delete(uuidToEmergency, uuidStr)
