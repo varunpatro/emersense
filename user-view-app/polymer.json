@@ -1,0 +1,5 @@
+{
+    "entrypoint": "index.html",
+    "shell": "src/user-view/user-view.html",
+    "fragments": []
+}

@@ -1,0 +1,5 @@
+{
+    "entrypoint": "index.html",
+    "shell": "src/admin-panel/admin-panel.html",
+    "fragments": []
+}
