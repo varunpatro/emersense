@@ -39,7 +39,7 @@
       <paper-scroll-header-panel fixed>
 
 		<paper-toolbar>
-		  <div class="spacer title">FbHack</div>
+		  <div class="spacer title">[[computeTitle(userId)]]</div>
 		  <paper-icon-button icon="more-vert"></paper-icon-button>
 		</paper-toolbar>
 
@@ -53,6 +53,7 @@
         <template is="dom-if" if="[[loggedIn]]">
             <template is="dom-if" if="[[!alertSent]]">
                 <paper-button raised on-tap="sendAlert">Send Alert</paper-button>
+                <paper-button raised>View Responses</paper-button>
             </template>
             <template is="dom-if" if="[[alertSent]]">
                 <paper-card>

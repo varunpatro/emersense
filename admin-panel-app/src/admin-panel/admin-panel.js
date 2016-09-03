@@ -11,6 +11,11 @@ Polymer({
         value: false,
         notify: true,
       },
+      userId: {
+        type: String,
+        value: "",
+        notify: true,
+      },
     },
     doLogin: function() {
         console.log(this.$);
@@ -27,4 +32,12 @@ Polymer({
             this.alertSent = true;
         }
     },
+    computeTitle: function(userId) {
+        console.log('Here');
+        if (!userId || userId === "") {
+            return "EmerSense";
+        } else {
+            return "EmerSense for " + userId;
+        }
+    }
 });
