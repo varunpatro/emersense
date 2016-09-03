@@ -1,6 +1,10 @@
 package main
 
-import "net/http"
+import (
+	"net/http"
+
+	"./controllers"
+)
 
 type Route struct {
 	Name        string
@@ -16,24 +20,18 @@ var routes = Routes{
 		"Index",
 		"GET",
 		"/",
-		Index,
+		controllers.Index,
 	},
 	Route{
-		"TodoIndex",
+		"ResidentsAll",
 		"GET",
-		"/todos",
-		TodoIndex,
+		"/residents/all",
+		controllers.ResidentsAll,
 	},
-	Route{
-		"TodoCreate",
-		"POST",
-		"/todos",
-		TodoCreate,
-	},
-	Route{
-		"TodoShow",
-		"GET",
-		"/todos/{todoId}",
-		TodoShow,
-	},
+	//Route{
+	//	"ResidentsReport",
+	//	"POST",
+	//	"/residents/report",
+	//	controllers.ResidentsReport,
+	//},
 }
