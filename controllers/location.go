@@ -2,20 +2,18 @@ package controllers
 
 import (
 	"encoding/json"
-	"fmt"
 	"github.com/kellydunn/golang-geo"
-	"github.com/kr/pretty"
 	"net/http"
 	"strconv"
 	"time"
 )
 
 type UserLocation struct {
-	Point geo.Point
+	Point *geo.Point
 	Time  time.Time
 }
 
-var uuidToLocation = make(map[string]geo.Point)
+var uuidToLocation = make(map[string]UserLocation)
 var DangerZones = getDangerZones()
 var thresholdDist = 0.050
 
@@ -47,11 +45,10 @@ func LocationUpdate(w http.ResponseWriter, r *http.Request) {
 	if err := json.NewEncoder(w).Encode(s); err != nil {
 		panic(err)
 	}
-
 }
 
-func getDangerZones() []geo.Point {
-	points := make([]geo.Point, 0)
+func getDangerZones() []*geo.Point {
+	points := make([]*geo.Point, 0)
 	points = append(points, geo.NewPoint(1.29565, 103.856611))  // south beach tower
 	points = append(points, geo.NewPoint(1.297588, 103.854308)) // national library
 	return points

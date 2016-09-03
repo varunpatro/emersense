@@ -14,7 +14,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 }
 
 func UserIndex(w http.ResponseWriter, r *http.Request) {
-	b, e := ioutil.ReadFile("user-view-app/build/bundled/index.html")
+	b, e := ioutil.ReadFile("user-view-app/build/unbundled/index.html")
 	w.Write(b)
 	//fmt.Fprint(w, "Welcome!\n")
 	fmt.Println(e)
