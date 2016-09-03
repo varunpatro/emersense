@@ -42,6 +42,10 @@
             @apply(--center-justified);
 		  @apply(--layout-flex);
 		}
+        .status-title {
+            @apply(--paper-font-display1);
+            margin: 8px;
+        }
         google-map {
             margin: 15px 8px;
             height: 500px;
@@ -51,6 +55,9 @@
             font-family: "roboto";
             margin: 8px;
         }
+        .spacing {
+            margin: 100px 0 0 0; 
+        }
     </style>
       <paper-scroll-header-panel fixed>
 
@@ -59,22 +66,33 @@
 		  <paper-icon-button icon="more-vert"></paper-icon-button>
 		</paper-toolbar>
           <template is="dom-if" if="[[!showMap]]">
-            <div class="content">
-                <paper-button raised on-tap="markAsSafe">I'm Safe</paper-button>
-                <paper-button raised on-tap="markAsUnsafe">I Need Help</paper-button>
-            </div>
-            <iron-ajax id="safe-ajax"
-                url = "/emergency/respond/safe"
-                params = '[[getParams(uuid)]]'
-                last-response={{safeResponse}}
-                handle-as="json"
-                debounce-duration=300 ></iron-ajax>
-            <iron-ajax id="unsafe-ajax"
-                url = "/emergency/respond/unsafe"
-                params = '[[getParams(uuid)]]'
-                last-response={{unsafeResponse}}
-                handle-as="json"
-                debounce-duration=300 ></iron-ajax>
+            <template is="dom-if" if="[[!showZikaMap]]">
+                <div class="content">
+                    <div class="status-title">Status for: South Beach Tower Fire</div>
+                    <paper-button raised on-tap="markAsSafe">I'm Safe</paper-button>
+                    <paper-button raised on-tap="markAsUnsafe">I Need Help</paper-button>
+                    <div class="spacing">
+                    <paper-button raised on-tap="goToZikaView">View Current Situations</paper-button>
+                </div>
+                <iron-ajax id="safe-ajax"
+                    url = "/emergency/respond/safe"
+                    params = '[[getParams(uuid)]]'
+                    last-response={{safeResponse}}
+                    handle-as="json"
+                    debounce-duration=300 ></iron-ajax>
+                <iron-ajax id="unsafe-ajax"
+                    url = "/emergency/respond/unsafe"
+                    params = '[[getParams(uuid)]]'
+                    last-response={{unsafeResponse}}
+                    handle-as="json"
+                    debounce-duration=300 ></iron-ajax>
+             </template>
+             <template is="dom-if" if="[[showZikaMap]]">
+                  <google-map id="zika-map" latitude="[[latitude]]" longitude="[[longtitude]]" api-key="AIzaSyA-1BPjLQlQRTQw3JK-ujdnrcQdro0ey30" zoom="12">
+                      <google-map-marker latitude="{{latitude}}" longitude="{{longtitude}}"
+                                         draggable="true" title="your location"></google-map-marker>
+                  </google-map>
+             </template>
           </template>
           <template is="dom-if" if="[[showMap]]">
               <div class="content">

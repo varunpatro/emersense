@@ -26,6 +26,11 @@ Polymer({
             value: false,
             notify: true
         },
+        showZikaMap: {
+            type: Boolean,
+            value: false,
+            notify: true
+        },
         latitude: {
             type: Number,
             value: 1.2956504,
@@ -42,7 +47,10 @@ Polymer({
           notify: true
         }
     },
-    ready: function() {
+    listeners: {
+		'google-map-ready': 'addCircles',
+	},
+	ready: function() {
         this.uuid = this.getUuid();
         console.log(this.uuid);
     },
@@ -74,6 +82,9 @@ Polymer({
         }
         this.triggerLocationService()
     },
+    goToZikaView: function() {
+        this.showZikaMap = true;
+    },
     triggerLocationService: function(){
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position){
@@ -95,5 +106,41 @@ Polymer({
             longtitude: this.longtitude,
             timestamp: Date.now()
         }
-    }
+    },
+	addCircles: function() {
+		zikaMap = document.querySelector("#zika-map");
+        var aljunied = {lat: 1.316566, lng: 103.88294};
+        var aljCircle = new window.google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#FF0000',
+            fillOpacity: 0.35,
+            map: zikaMap.map,
+            center: aljunied,
+            radius: 2500 
+        });
+        var bedok = {lat: 1.33733, lng: 103.93392};
+        var bedokCircle = new window.google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#FF0000',
+            fillOpacity: 0.35,
+            map: zikaMap.map,
+            center: bedok,
+            radius: 1000 
+        });
+        var yishun = {lat: 1.430087, lng: 103.83556};
+        var yishCircle = new window.google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#FF0000',
+            fillOpacity: 0.35,
+            map: zikaMap.map,
+            center: yishun,
+            radius: 1000 
+        });
+	},
 });
