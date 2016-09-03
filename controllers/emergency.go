@@ -12,6 +12,8 @@ import (
 	"../models"
 	"github.com/gorilla/mux"
 	"strconv"
+	"fmt"
+	"strings"
 )
 
 var twilio *gotwilio.Twilio
@@ -24,8 +26,8 @@ func init() {
 
 var emergencies = make(map[int]models.Emergency)
 
-var uuidToEmergency = make(map[*uuid.UUID]*models.Emergency)
-var uuidToUser = make(map[*uuid.UUID]*models.User)
+var uuidToEmergency = make(map[string]*models.Emergency)
+var uuidToUser = make(map[string]*models.User)
 
 func EmergencyAll(w http.ResponseWriter, r *http.Request) {
 	emap := make(map[int]string)
@@ -91,15 +93,14 @@ func EmergencyRespond(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	u, _ := uuid.ParseHex(uuidStr)
-	emergency, ok := uuidToEmergency[u]
+	emergency, ok := uuidToEmergency[uuidStr]
 
 	if !ok {
 		w.Write([]byte("invalid uuid"))
 		return
 	}
 
-	user := uuidToUser[u]
+	user := uuidToUser[uuidStr]
 
 	for i, val := range emergency.PendingList {
 		if val.User.Id == user.Id {
@@ -122,15 +123,16 @@ func sendPhoneNotifs(emergency *models.Emergency) {
 	for _, userStatus := range emergency.PendingList {
 		user := userStatus.User
 		u, _ := uuid.NewV4()
-		uuidToEmergency[u] = emergency
-		uuidToUser[u] = &user
-		sendClickLink(user, u)
+		uuidStr := strings.Replace(u.String(), "-", "", -1)
+		uuidToEmergency[uuidStr] = emergency
+		uuidToUser[uuidStr] = &user
+		sendClickLink(user, uuidStr)
 	}
 }
 
-func sendClickLink(user models.User, u *uuid.UUID) {
-	from := "+15555555555"
+func sendClickLink(user models.User, uuidStr string) {
+	from := "+12016056631"
 	to := user.Phone
-	message := "Hi " + user.Name + ", click here to alert your safety: http://localhost:8080/emergency/respond?uuid=" + u.String()
-	twilio.SendSMS(from, to, message, "", "")
+	message := "Hi " + user.Name + ", click here to alert your safety: \"http://localhost:8080/emergency/respond/" + uuidStr + "\""
+	fmt.Println(twilio.SendSMS(from, to, message, "", ""))
 }
