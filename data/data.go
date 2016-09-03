@@ -17,7 +17,7 @@ func GetMockUsers() []models.User {
 }
 
 func GetUsers() []models.User {
-	data := getData()
+	data := GetData()
 	users := make([]models.User, 0)
 	for _, u := range data {
 		users = append(users, u)

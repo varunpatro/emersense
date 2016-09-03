@@ -175,7 +175,7 @@ func UpdateStatus(id int, status bool, sheetTitle string) {
 	rowToWrite = strings.TrimSpace(rowToWrite)
 
 	row := make([]interface{}, 1)
-	row[0] = "OK"
+	row[0] = "✔"
 	data := make([][]interface{}, 1)
 	data[0] = row
 
