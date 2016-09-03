@@ -1,21 +1,20 @@
-
 package data
 
 import (
-"encoding/json"
-"fmt"
-"io/ioutil"
-"log"
-"net/http"
-"net/url"
-"os"
-"os/user"
-"path/filepath"
-"../models"
-"golang.org/x/net/context"
-"golang.org/x/oauth2"
-"golang.org/x/oauth2/google"
-"google.golang.org/api/sheets/v4"
+	"../models"
+	"encoding/json"
+	"fmt"
+	"golang.org/x/net/context"
+	"golang.org/x/oauth2"
+	"golang.org/x/oauth2/google"
+	"google.golang.org/api/sheets/v4"
+	"io/ioutil"
+	"log"
+	"net/http"
+	"net/url"
+	"os"
+	"os/user"
+	"path/filepath"
 	"strconv"
 	"strings"
 	//"io"
@@ -94,7 +93,7 @@ func saveToken(file string, token *oauth2.Token) {
 	json.NewEncoder(f).Encode(token)
 }
 
-func GetData() (map[int]models.User){
+func GetData() map[int]models.User {
 	ctx := context.Background()
 
 	b, err := ioutil.ReadFile("client_secret.json")
@@ -144,8 +143,6 @@ func GetData() (map[int]models.User){
 	}
 }
 
-
-
 func UpdateStatus(id int, status bool) {
 	ctx := context.Background()
 
@@ -171,10 +168,10 @@ func UpdateStatus(id int, status bool) {
 	rowToWrite := "Residents!"
 	if status {
 		rowToWrite += "D"
-	}else{
+	} else {
 		rowToWrite += "E"
 	}
-	rowToWrite += strconv.Itoa(id+1)
+	rowToWrite += strconv.Itoa(id + 1)
 	rowToWrite = strings.TrimSpace(rowToWrite)
 
 	row := make([]interface{}, 1)
@@ -184,14 +181,14 @@ func UpdateStatus(id int, status bool) {
 
 	val := sheets.ValueRange{}
 	val.Values = data
-	resp,err:= srv.Spreadsheets.Values.Update(spreadsheetId, rowToWrite, &val).ValueInputOption("RAW").Do()
+	resp, err := srv.Spreadsheets.Values.Update(spreadsheetId, rowToWrite, &val).ValueInputOption("RAW").Do()
 	if err != nil {
 		fmt.Println(err)
 	}
 	fmt.Println(resp)
 }
 
-func NewSheet() (string){
+func NewSheet() string {
 	ctx := context.Background()
 
 	b, err := ioutil.ReadFile("client_secret.json")
@@ -226,7 +223,9 @@ func NewSheet() (string){
 	reqArr[0] = &requestWrapper
 	req.Requests = reqArr
 	resp, err := srv.Spreadsheets.BatchUpdate(spreadsheetId, &req).Do()
-	if err!= nil { log.Fatal(err)}
+	if err != nil {
+		log.Fatal(err)
+	}
 	fmt.Println(resp)
 	users := GetData()
 	rowsToWrite := newSheetTitle + "!A1:C1"
@@ -237,6 +236,11 @@ func NewSheet() (string){
 	return newSheetTitle
 }
 
-func parseUsers(users map[int]models.User)([][]interface){
-	
+func parseUsers(users map[int]models.User) [][]interface{} {
+	rows := make([]interface{}, 0)
+	for _, u := range users {
+		userRow := []interface{}{u.Id, u.Name, u.Phone}
+		rows = append(rows, userRow)
+	}
+	return rows
 }
