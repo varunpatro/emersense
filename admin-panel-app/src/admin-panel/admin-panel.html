@@ -57,8 +57,9 @@
         <template is="dom-if" if="[[loggedIn]]">
             <template is="dom-if" if="[[!alertSent]]">
                 <paper-button raised on-tap="sendAlert">Send Alert</paper-button>
-                <paper-button href="https://docs.google.com/spreadsheets/d/1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
-                    raised>View Responses</paper-button>
+                <a href="https://docs.google.com/spreadsheets/d/1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c" target="_blank">
+                    <paper-button raised>View Responses</paper-button>
+                </a>
                 <iron-ajax id="send-alert-ajax"
                     url="/emergency/create"
                     handle-as="json"
@@ -71,8 +72,9 @@
                         You have sent out the alert.
                     </div>
                     <div class="card-actions">
-                        <paper-button href="https://docs.google.com/spreadsheets/d/1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
-                            raised>View Responses</paper-button>
+                        <a href="https://docs.google.com/spreadsheets/d/1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c" target="_blank">
+                            <paper-button raised>View Responses</paper-button>
+                        </a>
                     </div>
                 </paper-card>
             </template>
