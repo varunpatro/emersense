@@ -23,5 +23,10 @@ func NewRouter() *mux.Router {
 
 	}
 
+	bc := http.StripPrefix("/bower_components/", http.FileServer(http.Dir("./admin-panel-app/build/bundled/bower_components/")))
+	src := http.StripPrefix("/src/", http.FileServer(http.Dir("./admin-panel-app/build/bundled/src/")))
+	router.PathPrefix("/bower_components/").Handler(bc)
+	router.PathPrefix("/src/").Handler(src)
+
 	return router
 }

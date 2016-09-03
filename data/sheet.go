@@ -16,31 +16,10 @@ import (
 	"os/user"
 	"path/filepath"
 	"strconv"
+	"strings"
+	//"io"
+	"time"
 )
-
-var srv *sheets.Service
-
-func init() {
-	ctx := context.Background()
-
-	b, err := ioutil.ReadFile("client_secret.json")
-	if err != nil {
-		log.Fatalf("Unable to read client secret file: %v", err)
-	}
-
-	// If modifying these scopes, delete your previously saved credentials
-	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
-	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets.readonly")
-	if err != nil {
-		log.Fatalf("Unable to parse client secret file to config: %v", err)
-	}
-	client := getClient(ctx, config)
-
-	srv, err = sheets.New(client)
-	if err != nil {
-		log.Fatalf("Unable to retrieve Sheets Client %v", err)
-	}
-}
 
 // getClient uses a Context and Config to retrieve a Token
 // then generate a Client. It returns the generated Client.
@@ -114,7 +93,26 @@ func saveToken(file string, token *oauth2.Token) {
 	json.NewEncoder(f).Encode(token)
 }
 
-func getData() map[int]models.User {
+func GetData() map[int]models.User {
+	ctx := context.Background()
+
+	b, err := ioutil.ReadFile("client_secret.json")
+	if err != nil {
+		log.Fatalf("Unable to read client secret file: %v", err)
+	}
+
+	// If modifying these scopes, delete your previously saved credentials
+	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
+	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive")
+	if err != nil {
+		log.Fatalf("Unable to parse client secret file to config: %v", err)
+	}
+	client := getClient(ctx, config)
+
+	srv, err := sheets.New(client)
+	if err != nil {
+		log.Fatalf("Unable to retrieve Sheets Client %v", err)
+	}
 
 	// Prints the names and majors of students in a sample spreadsheet:
 	// https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
@@ -124,7 +122,7 @@ func getData() map[int]models.User {
 	if err != nil {
 		log.Fatalf("Unable to retrieve data from sheet. %v", err)
 	}
-
+	fmt.Println(resp.Header)
 	users := make(map[int]models.User)
 	if len(resp.Values) > 0 {
 		log.Print("Retrieved data")
@@ -143,5 +141,120 @@ func getData() map[int]models.User {
 		fmt.Print("No data found.")
 		return nil
 	}
+}
 
+func UpdateStatus(id int, status bool, sheetTitle string) {
+	ctx := context.Background()
+
+	b, err := ioutil.ReadFile("client_secret.json")
+	if err != nil {
+		log.Fatalf("Unable to read client secret file: %v", err)
+	}
+
+	// If modifying these scopes, delete your previously saved credentials
+	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
+	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive")
+	if err != nil {
+		log.Fatalf("Unable to parse client secret file to config: %v", err)
+	}
+	client := getClient(ctx, config)
+
+	srv, err := sheets.New(client)
+	if err != nil {
+		log.Fatalf("Unable to retrieve Sheets Client %v", err)
+	}
+
+	spreadsheetId := "1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
+	rowToWrite := sheetTitle + "!"
+	if status {
+		rowToWrite += "D"
+	} else {
+		rowToWrite += "E"
+	}
+	rowToWrite += strconv.Itoa(id + 1)
+	rowToWrite = strings.TrimSpace(rowToWrite)
+
+	row := make([]interface{}, 1)
+	row[0] = "OK"
+	data := make([][]interface{}, 1)
+	data[0] = row
+
+	val := sheets.ValueRange{}
+	val.Values = data
+	resp, err := srv.Spreadsheets.Values.Update(spreadsheetId, rowToWrite, &val).ValueInputOption("RAW").Do()
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(resp)
+}
+
+func NewSheet() (string) {
+	ctx := context.Background()
+
+	b, err := ioutil.ReadFile("client_secret.json")
+	if err != nil {
+		log.Fatalf("Unable to read client secret file: %v", err)
+	}
+
+	// If modifying these scopes, delete your previously saved credentials
+	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
+	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive")
+	if err != nil {
+		log.Fatalf("Unable to parse client secret file to config: %v", err)
+	}
+	client := getClient(ctx, config)
+
+	srv, err := sheets.New(client)
+	if err != nil {
+		log.Fatalf("Unable to retrieve Sheets Client %v", err)
+	}
+	spreadsheetId := "1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
+	newSheetTitle := strconv.Itoa(time.Now().Day()) + time.Now().Month().String() + strconv.Itoa(time.Now().Year())
+	sheetProperties := sheets.SheetProperties{}
+	sheetProperties.Title = newSheetTitle
+	addSheetReq := sheets.AddSheetRequest{}
+	addSheetReq.Properties = &sheetProperties
+	requestWrapper := sheets.Request{}
+	requestWrapper.AddSheet = &addSheetReq
+
+	req := sheets.BatchUpdateSpreadsheetRequest{}
+
+	reqArr := make([]*sheets.Request, 1)
+	reqArr[0] = &requestWrapper
+	req.Requests = reqArr
+	resp, err := srv.Spreadsheets.BatchUpdate(spreadsheetId, &req).Do()
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(resp)
+	rowsToWrite := newSheetTitle + "!A1:E1"
+	valRange := sheets.ValueRange{}
+	row := make([]interface{}, 5)
+	row[0] = "Id"
+	row[1] = "Name"
+	row[2] = "Phone Number"
+	row[3] = "Mark Safe"
+	row[4] = "Mark Unsafe"
+	data := make([][]interface{}, 1)
+	data[0] = row
+	valRange.Values = data
+	srv.Spreadsheets.Values.Update(spreadsheetId, rowsToWrite, &valRange).ValueInputOption("RAW").Do()
+
+	rowsToWrite = newSheetTitle + "!A2:C"
+	valRange = sheets.ValueRange{}
+	valRange.Values = parseUsers(GetData())
+	srv.Spreadsheets.Values.Update(spreadsheetId, rowsToWrite, &valRange).ValueInputOption("RAW").Do()
+	return newSheetTitle
+}
+
+func parseUsers(users map[int]models.User) [][]interface{} {
+	rows := make([][]interface{}, 0)
+	for _, u := range users {
+		row := make([]interface{}, 3)
+		row[0] = u.Id
+		row[1] = u.Name
+		row[2] = u.Phone
+		rows = append(rows, row)
+	}
+	return rows
 }
