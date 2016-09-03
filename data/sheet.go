@@ -133,7 +133,7 @@ func GetData() (map[int]models.User){
 			if err != nil {
 				log.Print("some errors")
 			}
-			user:=models.User{Name: row[1].(string), Id: id, Phone: row[3].(string)}
+			user := models.User{Name: row[1].(string), Id: id, Phone: row[2].(string)}
 			users[user.Id] = user
 
 		}
