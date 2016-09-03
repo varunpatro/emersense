@@ -2,3 +2,5 @@ fbhack
 *.swp
 tmp/
 fbhack.iml
+user-view-app/bower_components
+user-view-app/build
