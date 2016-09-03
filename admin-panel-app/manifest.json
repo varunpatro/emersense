@@ -1,0 +1,6 @@
+{
+  "name": "admin-panel-app",
+  "short_name": "admin-panel-app",
+  "start_url": "/",
+  "display": "standalone"
+}
