@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"../data"
 	"../models"
 	"encoding/json"
 	"github.com/kellydunn/golang-geo"
@@ -35,6 +36,30 @@ func LocationUpdate(w http.ResponseWriter, r *http.Request) {
 		Time:  time,
 	}
 	uuidToLocation[uuidStr] = ul
+	user := uuidToUser[uuidStr]
+	user.Latitude = lat
+	user.Longitude = long
+	latlong := r.URL.Query().Get("latitude") + "," + r.URL.Query().Get("longitude")
+	e := uuidToEmergency[uuidStr]
+	data.UpdateUserLocation(user.Id, latlong, e.SheetTitle)
+
+	for _, l := range e.PendingList {
+		if l.User.Id == user.Id {
+			l.User.Latitude, l.User.Longitude = lat, long
+		}
+	}
+
+	for _, l := range e.SafeList {
+		if l.User.Id == user.Id {
+			l.User.Latitude, l.User.Longitude = lat, long
+		}
+	}
+
+	for _, l := range e.UnsafeList {
+		if l.User.Id == user.Id {
+			l.User.Latitude, l.User.Longitude = lat, long
+		}
+	}
 
 	s := status{status: false}
 	for _, dz := range DangerZones {

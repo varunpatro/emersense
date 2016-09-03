@@ -3,20 +3,22 @@ package data
 import "../models"
 
 var mockUsers = []models.User{{
-	Name: "varun",
-	//Phone: "+6593716368",
-}, {
-	Name: "weihan",
-}, {
-	Name:  "ayush",
+	Id:    1,
+	Name:  "Ayush",
 	Phone: "+6598970982",
-}}
+}, {
+	Id:    2,
+	Name:  "Weihan",
+	Phone: "+90011282",
+},
+}
 
 func GetMockUsers() []models.User {
 	return mockUsers
 }
 
 func GetUsers() []models.User {
+	return mockUsers
 	data := GetData()
 	users := make([]models.User, 0)
 	for _, u := range data {
@@ -25,4 +27,3 @@ func GetUsers() []models.User {
 
 	return users
 }
-
