@@ -143,7 +143,7 @@ func GetData() map[int]models.User {
 	}
 }
 
-func GetUserLocation(sheetTitle string) {
+func GetUserLocation(sheetTitle string) ([]string) {
 	ctx := context.Background()
 
 	b, err := ioutil.ReadFile("client_secret.json")
