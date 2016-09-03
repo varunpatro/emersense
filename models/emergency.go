@@ -8,4 +8,5 @@ type Emergency struct {
 	PendingList []UserStatus `json:"pendingList"`
 	SafeList    []UserStatus `json:"safeList"`
 	UnsafeList  []UserStatus `json:"unsafeList"`
+	Sheet       string       `json:"sheet"`
 }

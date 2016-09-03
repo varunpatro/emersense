@@ -4,10 +4,25 @@ import "../models"
 
 var mockUsers = []models.User{{
 	Name: "varun",
+	//Phone: "+6593716368",
 }, {
 	Name: "weihan",
+}, {
+	Name:  "ayush",
+	Phone: "+6598970982",
 }}
 
-func GetUsers() []models.User {
+func GetMockUsers() []models.User {
 	return mockUsers
 }
+
+func GetUsers() []models.User {
+	data := GetData()
+	users := make([]models.User, 0)
+	for _, u := range data {
+		users = append(users, u)
+	}
+
+	return users
+}
+
