@@ -5,10 +5,10 @@ import "time"
 type User struct {
 	Id   int    `json:"id"`
 	Name string `json:"name"`
+	Phone string `json:"phone"`
 }
 
 type UserStatus struct {
-	User      User      `json:"user"`
-	Status    bool      `json:"status"`
-	UpdatedAt time.Time `json:"updatedAt"`
+	User      User            `json:"user"`
+	UpdatedAt time.Time       `json:"updatedAt"`
 }
