@@ -187,6 +187,46 @@ func UpdateStatus(id int, status bool, sheetTitle string) {
 	}
 	fmt.Println(resp)
 }
+func UpdateUserLocation(id int, location string, sheetTitle string){
+	ctx := context.Background()
+
+	b, err := ioutil.ReadFile("client_secret.json")
+	if err != nil {
+		log.Fatalf("Unable to read client secret file: %v", err)
+	}
+
+	// If modifying these scopes, delete your previously saved credentials
+	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
+	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive")
+	if err != nil {
+		log.Fatalf("Unable to parse client secret file to config: %v", err)
+	}
+	client := getClient(ctx, config)
+
+	srv, err := sheets.New(client)
+	if err != nil {
+		log.Fatalf("Unable to retrieve Sheets Client %v", err)
+	}
+
+	spreadsheetId := "1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
+	rowToWrite := sheetTitle + "!F"
+	rowToWrite += strconv.Itoa(id + 1)
+	rowToWrite = strings.TrimSpace(rowToWrite)
+
+	row := make([]interface{}, 1)
+	row[0] = location
+	data := make([][]interface{}, 1)
+	data[0] = row
+
+	val := sheets.ValueRange{}
+	val.Values = data
+	resp, err := srv.Spreadsheets.Values.Update(spreadsheetId, rowToWrite, &val).ValueInputOption("RAW").Do()
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Printf("Location Update:\n %u\n", resp)
+
+}
 
 func NewSheet() (string, string) {
 	ctx := context.Background()
@@ -229,14 +269,15 @@ func NewSheet() (string, string) {
 	fmt.Println("new sheet header")
 	fmt.Println(resp)
 	fmt.Println()
-	rowsToWrite := newSheetTitle + "!A1:E1"
+	rowsToWrite := newSheetTitle + "!A1:F1"
 	valRange := sheets.ValueRange{}
-	row := make([]interface{}, 5)
+	row := make([]interface{}, 6)
 	row[0] = "Id"
 	row[1] = "Name"
 	row[2] = "Phone Number"
 	row[3] = "Mark Safe"
 	row[4] = "Mark Unsafe"
+	row[5] = "Location"
 	data := make([][]interface{}, 1)
 	data[0] = row
 	valRange.Values = data
