@@ -11,6 +11,16 @@ Polymer({
         value: false,
         notify: true,
       },
+      userId: {
+        type: String,
+        value: "",
+        notify: true,
+      },
+      response: {
+        type: Object,
+        value: {},
+        notify: true
+      },
     },
     doLogin: function() {
         console.log(this.$);
@@ -23,8 +33,17 @@ Polymer({
     },
     sendAlert: function() {
         if (!this.alertSent) {
-            // TODO Do the ajax call.
+            var sender = document.querySelector("#send-alert-ajax");
+            sender.generateRequest();       
             this.alertSent = true;
         }
     },
+    computeTitle: function(userId) {
+        console.log('Here');
+        if (!userId || userId === "") {
+            return "EmerSense";
+        } else {
+            return "EmerSense for " + userId;
+        }
+    }
 });
