@@ -23,10 +23,10 @@ var routes = Routes{
 		controllers.Index,
 	},
 	Route{
-		"ResidentsAll",
+		"UserAll",
 		"GET",
-		"/residents/all",
-		controllers.ResidentsAll,
+		"/user/all",
+		controllers.UserAll,
 	},
 	Route{
 		"EmergencyAll",
@@ -47,15 +47,15 @@ var routes = Routes{
 		controllers.EmergencyCreate,
 	},
 	Route{
-		"EmergencyRespond",
+		"EmergencyRespondSafe",
 		"GET",
-		"/emergency/respond/{uuid}",
-		controllers.EmergencyRespond,
+		"/emergency/respond/safe",
+		controllers.EmergencyRespondSafe,
 	},
-	//Route{
-	//	"ResidentsReport",
-	//	"POST",
-	//	"/residents/report",
-	//	controllers.ResidentsReport,
-	//},
+	Route{
+		"EmergencyRespondUnsafe",
+		"GET",
+		"/emergency/respond/unsafe",
+		controllers.EmergencyRespondUnsafe,
+	},
 }

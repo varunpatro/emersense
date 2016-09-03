@@ -92,8 +92,8 @@ func EmergencyCreate(w http.ResponseWriter, r *http.Request) {
 	sendPhoneNotifs(&newEmergency)
 }
 
-func EmergencyRespond(w http.ResponseWriter, r *http.Request) {
-	uuidStr := mux.Vars(r)["uuid"]
+func EmergencyRespondSafe(w http.ResponseWriter, r *http.Request) {
+	uuidStr := r.URL.Query().Get("uuid")
 	if uuidStr == "" {
 		w.Write([]byte("error in getting uuid"))
 		return
@@ -128,6 +128,42 @@ func EmergencyRespond(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(*emergency)
 }
 
+func EmergencyRespondUnsafe(w http.ResponseWriter, r *http.Request) {
+	uuidStr := r.URL.Query().Get("uuid")
+	if uuidStr == "" {
+		w.Write([]byte("error in getting uuid"))
+		return
+	}
+
+	emergency, ok := uuidToEmergency[uuidStr]
+
+	if !ok {
+		w.Write([]byte("invalid uuid"))
+		return
+	}
+
+	user := uuidToUser[uuidStr]
+
+	emergency.UnsafeList = append(emergency.UnsafeList, models.UserStatus{
+		User:      *user,
+		UpdatedAt: time.Now(),
+	})
+
+	for i, val := range emergency.PendingList {
+		if val.User.Id == user.Id {
+			emergency.PendingList[i] = emergency.PendingList[len(emergency.PendingList)-1]
+			//emergency.PendingList[len(emergency.PendingList)-1] = models.UserStatus{}
+			emergency.PendingList = emergency.PendingList[:len(emergency.PendingList)-1]
+			break
+		}
+	}
+
+	w.Write([]byte("oh no! help coming to you soon!"))
+	delete(uuidToEmergency, uuidStr)
+	delete(uuidToEmergency, uuidStr)
+	fmt.Println(*emergency)
+}
+
 func sendPhoneNotifs(emergency *models.Emergency) {
 	for _, userStatus := range emergency.PendingList {
 		user := userStatus.User
@@ -142,6 +178,6 @@ func sendPhoneNotifs(emergency *models.Emergency) {
 func sendClickLink(user models.User, uuidStr string) {
 	from := "+12016056631"
 	to := user.Phone
-	message := "Hi " + user.Name + ", click here to alert your safety: http://localhost:8080/emergency/respond/" + uuidStr
+	message := "Hi " + user.Name + ", click here to alert your safety: http://172.22.117.167:8080/emergency/respond/safe?uuid=" + uuidStr
 	fmt.Println(twilio.SendSMS(from, to, message, "", ""))
 }
