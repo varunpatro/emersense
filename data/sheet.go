@@ -188,7 +188,7 @@ func UpdateStatus(id int, status bool, sheetTitle string) {
 	fmt.Println(resp)
 }
 
-func NewSheet() (string, int64) {
+func NewSheet() (string, string) {
 	ctx := context.Background()
 
 	b, err := ioutil.ReadFile("client_secret.json")
@@ -209,7 +209,7 @@ func NewSheet() (string, int64) {
 		log.Fatalf("Unable to retrieve Sheets Client %v", err)
 	}
 	spreadsheetId := "1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
-	newSheetTitle := strconv.Itoa(time.Now().Day()) + time.Now().Month().String() + strconv.Itoa(time.Now().Year())
+	newSheetTitle := strconv.Itoa(time.Now().Hour()) +":"+ strconv.Itoa(time.Now().Minute())+ strconv.Itoa(time.Now().Day()) + time.Now().Month().String() + strconv.Itoa(time.Now().Year())
 	sheetProperties := sheets.SheetProperties{}
 	sheetProperties.Title = newSheetTitle
 	addSheetReq := sheets.AddSheetRequest{}
@@ -247,8 +247,15 @@ func NewSheet() (string, int64) {
 	valRange.Values = parseUsers(GetData())
 	srv.Spreadsheets.Values.Update(spreadsheetId, rowsToWrite, &valRange).ValueInputOption("RAW").Do()
 
+	sheetId := GetSheetId(newSheetTitle)
+	if sheetId == -1 {
+		sheetUrl := "https://docs.google.com/spreadsheets/d/" + spreadsheetId
+		return newSheetTitle, sheetUrl
+	}else{
+		sheetUrl := "https://docs.google.com/spreadsheets/d/" + spreadsheetId + "/edit#gid=" + strconv.Itoa(int(sheetId))
+		return newSheetTitle, sheetUrl
+	}
 
-	return newSheetTitle, GetSheetId(newSheetTitle)
 }
 
 func GetSheetId(sheetTitle string) (int64){
