@@ -1,6 +1,9 @@
 package models
 
-import "time"
+import (
+	"time"
+	"github.com/kellydunn/golang-geo"
+)
 
 type User struct {
 	Id    int    `json:"id"`
@@ -11,4 +14,9 @@ type User struct {
 type UserStatus struct {
 	User      User      `json:"user"`
 	UpdatedAt time.Time `json:"updatedAt"`
+}
+
+type UserLocation struct {
+	Point *geo.Point
+	Time  time.Time
 }

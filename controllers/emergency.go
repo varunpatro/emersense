@@ -76,11 +76,13 @@ func EmergencyCreate(w http.ResponseWriter, r *http.Request) {
 			UpdatedAt: time.Now(),
 		})
 	}
+	st, su := data.NewSheet()
 	newEmergency := models.Emergency{
 		Id:          emergencyCount,
 		CreatedAt:   time.Now(),
 		PendingList: pendingUserList,
-		Sheet:       data.NewSheet(),
+		SheetTitle:  st,
+		SheetURL:    su,
 	}
 	emergencies[emergencyCount] = &newEmergency
 
@@ -123,11 +125,11 @@ func EmergencyRespondSafe(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	data.UpdateStatus(user.Id, true, emergency.Sheet)
+	data.UpdateStatus(user.Id, true, emergency.SheetTitle)
 
 	w.Write([]byte("safely responded"))
-	delete(uuidToEmergency, uuidStr)
-	delete(uuidToEmergency, uuidStr)
+	//delete(uuidToEmergency, uuidStr)
+	//delete(uuidToEmergency, uuidStr)
 	fmt.Println(*emergency)
 }
 
@@ -161,11 +163,11 @@ func EmergencyRespondUnsafe(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	data.UpdateStatus(user.Id, false, emergency.Sheet)
+	data.UpdateStatus(user.Id, false, emergency.SheetTitle)
 
 	w.Write([]byte("oh no! help coming to you soon!"))
-	delete(uuidToEmergency, uuidStr)
-	delete(uuidToEmergency, uuidStr)
+	//delete(uuidToEmergency, uuidStr)
+	//delete(uuidToEmergency, uuidStr)
 	fmt.Println(*emergency)
 }
 
