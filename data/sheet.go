@@ -143,6 +143,43 @@ func GetData() map[int]models.User {
 	}
 }
 
+func GetUserLocation(sheetTitle string) ([]string) {
+	ctx := context.Background()
+
+	b, err := ioutil.ReadFile("client_secret.json")
+	if err != nil {
+		log.Fatalf("Unable to read client secret file: %v", err)
+	}
+
+	// If modifying these scopes, delete your previously saved credentials
+	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
+	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive")
+	if err != nil {
+		log.Fatalf("Unable to parse client secret file to config: %v", err)
+	}
+	client := getClient(ctx, config)
+
+	srv, err := sheets.New(client)
+	if err != nil {
+		log.Fatalf("Unable to retrieve Sheets Client %v", err)
+	}
+	spreadsheetId := "1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
+	rowsToRead := sheetTitle + "!F";
+	resp, err := srv.Spreadsheets.Values.Get(spreadsheetId, rowsToRead).Do()
+	if err != nil {
+		log.Fatal(err)
+	}
+	if len(resp.Values) > 0 {
+		locStrs := make([]string,0)
+		for _, row := range resp.Values {
+			locStr := row[0].(string)
+			locStrs = append(locStrs, locStr)
+		}
+		return locStrs
+	}
+	return make([]string, 0)
+}
+
 func UpdateStatus(id int, status bool, sheetTitle string) {
 	ctx := context.Background()
 
@@ -298,6 +335,7 @@ func NewSheet() (string, string) {
 	}
 
 }
+
 
 func GetSheetId(sheetTitle string) (int64){
 	ctx := context.Background()

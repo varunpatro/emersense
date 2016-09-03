@@ -19,6 +19,7 @@
             background-color: var(--paper-grey-200, #eee);;
         }
 		paper-toolbar {
+            text-align: center;
 		  background-color: var(--google-blue-500, #4285f4);
 		}
 		paper-toolbar .title {
@@ -28,6 +29,7 @@
 		  padding: 8px;
 		}
         .content {
+            text-align: center;
             margin: 8px 8px 8px 8px;
         }
 		paper-icon-button {
@@ -39,10 +41,15 @@
         paper-button {
             text-decoration: None;
         }
+
+        .card-content{
+            font-size: 20px;
+            font-family: 'roboto';
+        }
         .premsg{
-            font-family: "roboto";
+            font-size: 20px;
+            font-family: 'roboto';
             margin: 8px;
-            font-size: 16px;
         }
     </style>
       <paper-scroll-header-panel fixed>
@@ -61,6 +68,7 @@
         </template>
         <template is="dom-if" if="[[loggedIn]]">
             <template is="dom-if" if="[[!alertSent]]">
+                <div class="content">
                 <div class="premsg">Building Location: 38 Beach Road, South, South Beach Tower</div>
                 <paper-button raised on-tap="sendAlert">Send Alert</paper-button>
                 <a href="[[sheetUrl]]" target="_blank">
@@ -72,6 +80,7 @@
                     last-response={{response}}
                            on-response="onEmergencyResponse"
                     debounce-duration=300></iron-ajax>
+                </div>
             </template>
             <template is="dom-if" if="[[alertSent]]">
                 <paper-card>
