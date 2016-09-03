@@ -1,0 +1,1 @@
+Polymer({is:"admin-panel",properties:{loggedIn:{type:Boolean,value:!1,notify:!0},alertSent:{type:Boolean,value:!1,notify:!0}},doLogin:function(){console.log(this.$);var e=document.querySelector("#email-input").value,o=document.querySelector("#password-input").value;console.log(e),console.log(o),this.loggedIn=!0},sendAlert:function(){this.alertSent||(this.alertSent=!0)}});
