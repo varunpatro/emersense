@@ -1,3 +1,5 @@
+package data
+
 //package data
 //
 //import (

@@ -1,12 +1,14 @@
 package main
 
 import (
-	"./data"
+	//"./data"
+	"log"
+	"net/http"
 )
 
 func main() {
-	data.GetData()
-	//router := NewRouter()
-	//
-	//log.Fatal(http.ListenAndServe(":8080", router))
+	//data.GetData()
+	router := NewRouter()
+
+	log.Fatal(http.ListenAndServe(":8080", router))
 }

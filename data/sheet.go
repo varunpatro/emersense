@@ -16,6 +16,7 @@ import (
 "golang.org/x/oauth2"
 "golang.org/x/oauth2/google"
 "google.golang.org/api/sheets/v4"
+	"strconv"
 )
 
 // getClient uses a Context and Config to retrieve a Token
@@ -124,8 +125,15 @@ func GetData() (map[int]models.User){
 	if len(resp.Values) > 0 {
 		log.Print("Retrieved data")
 		for _, row := range resp.Values {
-			// Print columns A and E, which correspond to indices 0 and 4.
-			user:=models.User{Name: row[1].(string), Id: row[0].(int), Phone: row[3].(string)}
+			fmt.Print(row[0].(string) + "\n")
+			fmt.Print(row[1].(string) + "\n")
+			fmt.Print(row[2].(string) + "\n")
+			idstr := row[0].(string)
+			id, err := strconv.Atoi(idstr)
+			if err != nil {
+				log.Print("some errors")
+			}
+			user:=models.User{Name: row[1].(string), Id: id, Phone: row[3].(string)}
 			users[user.Id] = user
 
 		}
