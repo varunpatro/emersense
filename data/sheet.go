@@ -143,7 +143,7 @@ func GetData() map[int]models.User {
 	}
 }
 
-func UpdateStatus(id int, status bool) {
+func UpdateStatus(id int, status bool, sheetTitle string) {
 	ctx := context.Background()
 
 	b, err := ioutil.ReadFile("client_secret.json")
@@ -165,7 +165,7 @@ func UpdateStatus(id int, status bool) {
 	}
 
 	spreadsheetId := "1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
-	rowToWrite := "Residents!"
+	rowToWrite := sheetTitle + "!"
 	if status {
 		rowToWrite += "D"
 	} else {
@@ -188,7 +188,7 @@ func UpdateStatus(id int, status bool) {
 	fmt.Println(resp)
 }
 
-func NewSheet() string {
+func NewSheet() (string) {
 	ctx := context.Background()
 
 	b, err := ioutil.ReadFile("client_secret.json")
@@ -209,7 +209,7 @@ func NewSheet() string {
 		log.Fatalf("Unable to retrieve Sheets Client %v", err)
 	}
 	spreadsheetId := "1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
-	newSheetTitle := time.Now().Month().String() + strconv.Itoa(time.Now().Year())
+	newSheetTitle := strconv.Itoa(time.Now().Day()) + time.Now().Month().String() + strconv.Itoa(time.Now().Year())
 	sheetProperties := sheets.SheetProperties{}
 	sheetProperties.Title = newSheetTitle
 	addSheetReq := sheets.AddSheetRequest{}
@@ -227,20 +227,34 @@ func NewSheet() string {
 		log.Fatal(err)
 	}
 	fmt.Println(resp)
-	users := GetData()
-	rowsToWrite := newSheetTitle + "!A1:C1"
+	rowsToWrite := newSheetTitle + "!A1:E1"
 	valRange := sheets.ValueRange{}
-	valRange.Values = parseUsers(users)
-	srv.Spreadsheets.Values.Update(spreadsheetId, rowsToWrite, valRange).ValueInputOption("RAW")
+	row := make([]interface{}, 5)
+	row[0] = "Id"
+	row[1] = "Name"
+	row[2] = "Phone Number"
+	row[3] = "Mark Safe"
+	row[4] = "Mark Unsafe"
+	data := make([][]interface{}, 1)
+	data[0] = row
+	valRange.Values = data
+	srv.Spreadsheets.Values.Update(spreadsheetId, rowsToWrite, &valRange).ValueInputOption("RAW").Do()
 
+	rowsToWrite = newSheetTitle + "!A2:C"
+	valRange = sheets.ValueRange{}
+	valRange.Values = parseUsers(GetData())
+	srv.Spreadsheets.Values.Update(spreadsheetId, rowsToWrite, &valRange).ValueInputOption("RAW").Do()
 	return newSheetTitle
 }
 
 func parseUsers(users map[int]models.User) [][]interface{} {
-	rows := make([]interface{}, 0)
+	rows := make([][]interface{}, 0)
 	for _, u := range users {
-		userRow := []interface{}{u.Id, u.Name, u.Phone}
-		rows = append(rows, userRow)
+		row := make([]interface{}, 3)
+		row[0] = u.Id
+		row[1] = u.Name
+		row[2] = u.Phone
+		rows = append(rows, row)
 	}
 	return rows
 }
