@@ -1,23 +1,46 @@
-
 package data
 
 import (
-"encoding/json"
-"fmt"
-"io/ioutil"
-"log"
-"net/http"
-"net/url"
-"os"
-"os/user"
-"path/filepath"
-"../models"
-"golang.org/x/net/context"
-"golang.org/x/oauth2"
-"golang.org/x/oauth2/google"
-"google.golang.org/api/sheets/v4"
+	"../models"
+	"encoding/json"
+	"fmt"
+	"golang.org/x/net/context"
+	"golang.org/x/oauth2"
+	"golang.org/x/oauth2/google"
+	"google.golang.org/api/sheets/v4"
+	"io/ioutil"
+	"log"
+	"net/http"
+	"net/url"
+	"os"
+	"os/user"
+	"path/filepath"
 	"strconv"
 )
+
+var srv *sheets.Service
+
+func init() {
+	ctx := context.Background()
+
+	b, err := ioutil.ReadFile("client_secret.json")
+	if err != nil {
+		log.Fatalf("Unable to read client secret file: %v", err)
+	}
+
+	// If modifying these scopes, delete your previously saved credentials
+	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
+	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets.readonly")
+	if err != nil {
+		log.Fatalf("Unable to parse client secret file to config: %v", err)
+	}
+	client := getClient(ctx, config)
+
+	srv, err = sheets.New(client)
+	if err != nil {
+		log.Fatalf("Unable to retrieve Sheets Client %v", err)
+	}
+}
 
 // getClient uses a Context and Config to retrieve a Token
 // then generate a Client. It returns the generated Client.
@@ -91,26 +114,7 @@ func saveToken(file string, token *oauth2.Token) {
 	json.NewEncoder(f).Encode(token)
 }
 
-func GetData() (map[int]models.User){
-	ctx := context.Background()
-
-	b, err := ioutil.ReadFile("client_secret.json")
-	if err != nil {
-		log.Fatalf("Unable to read client secret file: %v", err)
-	}
-
-	// If modifying these scopes, delete your previously saved credentials
-	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
-	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets.readonly")
-	if err != nil {
-		log.Fatalf("Unable to parse client secret file to config: %v", err)
-	}
-	client := getClient(ctx, config)
-
-	srv, err := sheets.New(client)
-	if err != nil {
-		log.Fatalf("Unable to retrieve Sheets Client %v", err)
-	}
+func getData() map[int]models.User {
 
 	// Prints the names and majors of students in a sample spreadsheet:
 	// https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
@@ -125,9 +129,6 @@ func GetData() (map[int]models.User){
 	if len(resp.Values) > 0 {
 		log.Print("Retrieved data")
 		for _, row := range resp.Values {
-			fmt.Print(row[0].(string) + "\n")
-			fmt.Print(row[1].(string) + "\n")
-			fmt.Print(row[2].(string) + "\n")
 			idstr := row[0].(string)
 			id, err := strconv.Atoi(idstr)
 			if err != nil {
@@ -142,6 +143,5 @@ func GetData() (map[int]models.User){
 		fmt.Print("No data found.")
 		return nil
 	}
-
 
 }

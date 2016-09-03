@@ -10,9 +10,9 @@ import (
 
 	"../data"
 	"../models"
+	"fmt"
 	"github.com/gorilla/mux"
 	"strconv"
-	"fmt"
 	"strings"
 )
 
@@ -133,6 +133,6 @@ func sendPhoneNotifs(emergency *models.Emergency) {
 func sendClickLink(user models.User, uuidStr string) {
 	from := "+12016056631"
 	to := user.Phone
-	message := "Hi " + user.Name + ", click here to alert your safety: \"http://localhost:8080/emergency/respond/" + uuidStr + "\""
+	message := "Hi " + user.Name + ", click here to alert your safety: http://localhost:8080/emergency/respond/" + uuidStr
 	fmt.Println(twilio.SendSMS(from, to, message, "", ""))
 }
