@@ -15,9 +15,8 @@ import (
 "golang.org/x/oauth2"
 "golang.org/x/oauth2/google"
 "google.golang.org/api/sheets/v4"
-	"google.golang.org/api/servicecontrol/v1"
+	//"google.golang.org/api/servicecontrol/v1"
 )
-
 
 // getClient uses a Context and Config to retrieve a Token
 // then generate a Client. It returns the generated Client.
@@ -91,7 +90,8 @@ func saveToken(file string, token *oauth2.Token) {
 	json.NewEncoder(f).Encode(token)
 }
 
-func GetData() (){
+func GetData() (map[int]models.User){
+	log.Print("Getting data from sheets")
 	ctx := context.Background()
 
 	b, err := ioutil.ReadFile("client_secret_54756703957-skqf9of8tfs9c6sajjhc768kn4fpu21h.apps.googleusercontent.com")
@@ -120,16 +120,16 @@ func GetData() (){
 	if err != nil {
 		log.Fatalf("Unable to retrieve data from sheet. %v", err)
 	}
-	Users := make(map[int]models.User)
+	users := make(map[int]models.User)
 	if len(resp.Values) > 0 {
-		return resp.Values
 		for _, row := range resp.Values {
 			// Print columns A and E, which correspond to indices 0 and 4.
 			fmt.Printf("%s, %s\n", row[0], row[1])
-			user:=models.User{Name: row[1], Id: row[0], Phone: row[3]}
-			Users[user.Id] = user
+			user:=models.User{Name: row[1].(string), Id: row[0].(int), Phone: row[3].(string)}
+			users[user.Id] = user
 
 		}
+		return users
 
 
 	} else {
@@ -139,49 +139,53 @@ func GetData() (){
 
 }
 
-func WriteData(id int, status bool) {
-	ctx := context.Background()
-
-	b, err := ioutil.ReadFile("client_secret_54756703957-skqf9of8tfs9c6sajjhc768kn4fpu21h.apps.googleusercontent.com")
-	if err != nil {
-		log.Fatalf("Unable to read client secret file: %v", err)
-	}
-
-	// If modifying these scopes, delete your previously saved credentials
-	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
-	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets.readonly")
-	if err != nil {
-		log.Fatalf("Unable to parse client secret file to config: %v", err)
-	}
-	client := getClient(ctx, config)
-
-	srv, err := sheets.New(client)
-	if err != nil {
-		log.Fatalf("Unable to retrieve Sheets Client %v", err)
-	}
-
-	// Prints the names and majors of students in a sample spreadsheet:
-	// https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
-	spreadsheetId := "1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms"
-	rowToWrite := "Residents!"
-	if status {
-		rowToWrite += "C"
-	}else{
-		rowToWrite += "D"
-	}
-	rowToWrite += string((id + 1))
-	val := sheets.ValueRange{"ok"}
-	resp, err := srv.Spreadsheets.Values.Update(spreadsheetId, rowToWrite, val).Do()
-	if(err != nil){
-		log.Fatalf("Unable to update sheets")
-	}
-	if(resp != nil){
-		if status {
-			log.Print("updated: " + string(id) +", Marked safe")
-		} else {
-			log.Print("updated: " + string(id) +", Marked unsafe")
-		}
-	}
-
-
-}
+//func WriteData(id int, status bool) {
+//	ctx := context.Background()
+//
+//	b, err := ioutil.ReadFile("client_secret_54756703957-skqf9of8tfs9c6sajjhc768kn4fpu21h.apps.googleusercontent.com")
+//	if err != nil {
+//		log.Fatalf("Unable to read client secret file: %v", err)
+//	}
+//
+//	// If modifying these scopes, delete your previously saved credentials
+//	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
+//	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets.readonly")
+//	if err != nil {
+//		log.Fatalf("Unable to parse client secret file to config: %v", err)
+//	}
+//	client := getClient(ctx, config)
+//
+//	srv, err := sheets.New(client)
+//	if err != nil {
+//		log.Fatalf("Unable to retrieve Sheets Client %v", err)
+//	}
+//
+//	// Prints the names and majors of students in a sample spreadsheet:
+//	// https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+//	spreadsheetId := "1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms"
+//	rowToWrite := "Residents!"
+//	if status {
+//		rowToWrite += "C"
+//	}else{
+//		rowToWrite += "D"
+//	}
+//	rowToWrite += string((id + 1))
+//	row := make([]interface{}, 1)
+//	row[0] = "OK"
+//	data := make([][]interface{}, 1)
+//	data[0] = row
+//	valrange := sheets.ValueRange{"ROWS", rowToWrite, data, nil, nil}
+//	resp, err := srv.Spreadsheets.Values.Update(spreadsheetId, rowToWrite, valrange).Do()
+//	if(err != nil){
+//		log.Fatalf("Unable to update sheets")
+//	}
+//	if(resp != nil){
+//		if status {
+//			log.Print("updated: " + string(id) +", Marked safe")
+//		} else {
+//			log.Print("updated: " + string(id) +", Marked unsafe")
+//		}
+//	}
+//
+//
+//}
