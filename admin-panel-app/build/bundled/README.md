@@ -1,6 +1,24 @@
 # \<admin-panel-app\>
 
+# Build
 
+  From this directory, run: 
+
+```
+bower install
+```
+
+  Build with:
+```
+  polymer build
+```
+
+Serve (along with dependencies):
+```
+    ./build/bundled/index.html
+```
+
+# Leaving the Original README below
 
 ## Install the Polymer-CLI
 
