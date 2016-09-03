@@ -17,6 +17,9 @@ import (
 "golang.org/x/oauth2/google"
 "google.golang.org/api/sheets/v4"
 	"strconv"
+	"strings"
+	//"io"
+	"time"
 )
 
 // getClient uses a Context and Config to retrieve a Token
@@ -101,7 +104,7 @@ func GetData() (map[int]models.User){
 
 	// If modifying these scopes, delete your previously saved credentials
 	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
-	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets.readonly")
+	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive")
 	if err != nil {
 		log.Fatalf("Unable to parse client secret file to config: %v", err)
 	}
@@ -120,14 +123,11 @@ func GetData() (map[int]models.User){
 	if err != nil {
 		log.Fatalf("Unable to retrieve data from sheet. %v", err)
 	}
-
+	fmt.Println(resp.Header)
 	users := make(map[int]models.User)
 	if len(resp.Values) > 0 {
 		log.Print("Retrieved data")
 		for _, row := range resp.Values {
-			fmt.Print(row[0].(string) + "\n")
-			fmt.Print(row[1].(string) + "\n")
-			fmt.Print(row[2].(string) + "\n")
 			idstr := row[0].(string)
 			id, err := strconv.Atoi(idstr)
 			if err != nil {
@@ -142,6 +142,101 @@ func GetData() (map[int]models.User){
 		fmt.Print("No data found.")
 		return nil
 	}
+}
 
 
+
+func UpdateStatus(id int, status bool) {
+	ctx := context.Background()
+
+	b, err := ioutil.ReadFile("client_secret.json")
+	if err != nil {
+		log.Fatalf("Unable to read client secret file: %v", err)
+	}
+
+	// If modifying these scopes, delete your previously saved credentials
+	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
+	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive")
+	if err != nil {
+		log.Fatalf("Unable to parse client secret file to config: %v", err)
+	}
+	client := getClient(ctx, config)
+
+	srv, err := sheets.New(client)
+	if err != nil {
+		log.Fatalf("Unable to retrieve Sheets Client %v", err)
+	}
+
+	spreadsheetId := "1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
+	rowToWrite := "Residents!"
+	if status {
+		rowToWrite += "D"
+	}else{
+		rowToWrite += "E"
+	}
+	rowToWrite += strconv.Itoa(id+1)
+	rowToWrite = strings.TrimSpace(rowToWrite)
+
+	row := make([]interface{}, 1)
+	row[0] = "OK"
+	data := make([][]interface{}, 1)
+	data[0] = row
+
+	val := sheets.ValueRange{}
+	val.Values = data
+	resp,err:= srv.Spreadsheets.Values.Update(spreadsheetId, rowToWrite, &val).ValueInputOption("RAW").Do()
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(resp)
+}
+
+func NewSheet() (string){
+	ctx := context.Background()
+
+	b, err := ioutil.ReadFile("client_secret.json")
+	if err != nil {
+		log.Fatalf("Unable to read client secret file: %v", err)
+	}
+
+	// If modifying these scopes, delete your previously saved credentials
+	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
+	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive")
+	if err != nil {
+		log.Fatalf("Unable to parse client secret file to config: %v", err)
+	}
+	client := getClient(ctx, config)
+
+	srv, err := sheets.New(client)
+	if err != nil {
+		log.Fatalf("Unable to retrieve Sheets Client %v", err)
+	}
+	spreadsheetId := "1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
+	newSheetTitle := time.Now().Month().String() + strconv.Itoa(time.Now().Year())
+	sheetProperties := sheets.SheetProperties{}
+	sheetProperties.Title = newSheetTitle
+	addSheetReq := sheets.AddSheetRequest{}
+	addSheetReq.Properties = &sheetProperties
+	requestWrapper := sheets.Request{}
+	requestWrapper.AddSheet = &addSheetReq
+
+	req := sheets.BatchUpdateSpreadsheetRequest{}
+
+	reqArr := make([]*sheets.Request, 1)
+	reqArr[0] = &requestWrapper
+	req.Requests = reqArr
+	resp, err := srv.Spreadsheets.BatchUpdate(spreadsheetId, &req).Do()
+	if err!= nil { log.Fatal(err)}
+	fmt.Println(resp)
+	users := GetData()
+	rowsToWrite := newSheetTitle + "!A1:C1"
+	valRange := sheets.ValueRange{}
+	valRange.Values = parseUsers(users)
+	srv.Spreadsheets.Values.Update(spreadsheetId, rowsToWrite, valRange).ValueInputOption("RAW")
+
+	return newSheetTitle
+}
+
+func parseUsers(users map[int]models.User)([][]interface){
+	
 }
