@@ -39,6 +39,11 @@
         paper-button {
             text-decoration: None;
         }
+        .premsg{
+            font-family: "roboto";
+            margin: 8px;
+            font-size: 16px;
+        }
     </style>
       <paper-scroll-header-panel fixed>
 
@@ -56,6 +61,7 @@
         </template>
         <template is="dom-if" if="[[loggedIn]]">
             <template is="dom-if" if="[[!alertSent]]">
+                <div class="premsg">Building Location: 38 Beach Road, South, South Beach Tower</div>
                 <paper-button raised on-tap="sendAlert">Send Alert</paper-button>
                 <a href="https://docs.google.com/spreadsheets/d/1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c" target="_blank">
                     <paper-button raised>View Responses</paper-button>
