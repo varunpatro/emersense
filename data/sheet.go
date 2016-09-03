@@ -188,7 +188,7 @@ func UpdateStatus(id int, status bool, sheetTitle string) {
 	fmt.Println(resp)
 }
 
-func NewSheet() (string) {
+func NewSheet() (string, int64) {
 	ctx := context.Background()
 
 	b, err := ioutil.ReadFile("client_secret.json")
@@ -226,7 +226,9 @@ func NewSheet() (string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	fmt.Println("new sheet header")
 	fmt.Println(resp)
+	fmt.Println()
 	rowsToWrite := newSheetTitle + "!A1:E1"
 	valRange := sheets.ValueRange{}
 	row := make([]interface{}, 5)
@@ -244,7 +246,45 @@ func NewSheet() (string) {
 	valRange = sheets.ValueRange{}
 	valRange.Values = parseUsers(GetData())
 	srv.Spreadsheets.Values.Update(spreadsheetId, rowsToWrite, &valRange).ValueInputOption("RAW").Do()
-	return newSheetTitle
+
+
+	return newSheetTitle, GetSheetId(newSheetTitle)
+}
+
+func GetSheetId(sheetTitle string) (int64){
+	ctx := context.Background()
+
+	b, err := ioutil.ReadFile("client_secret.json")
+	if err != nil {
+		log.Fatalf("Unable to read client secret file: %v", err)
+	}
+
+	// If modifying these scopes, delete your previously saved credentials
+	// at ~/.credentials/sheets.googleapis.com-go-quickstart.json
+	config, err := google.ConfigFromJSON(b, "https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive")
+	if err != nil {
+		log.Fatalf("Unable to parse client secret file to config: %v", err)
+	}
+	client := getClient(ctx, config)
+
+	srv, err := sheets.New(client)
+	if err != nil {
+		log.Fatalf("Unable to retrieve Sheets Client %v", err)
+	}
+	spreadsheetId := "1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c"
+
+	resp, err := srv.Spreadsheets.Get(spreadsheetId).Do()
+	if err != nil{
+		log.Fatal(err)
+	}
+	for _, s := range resp.Sheets {
+		title := s.Properties.Title
+		fmt.Println(title)
+		if title == sheetTitle {
+			return s.Properties.SheetId
+		}
+	}
+	return -1
 }
 
 func parseUsers(users map[int]models.User) [][]interface{} {
