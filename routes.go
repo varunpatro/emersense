@@ -70,4 +70,10 @@ var routes = Routes{
 		"/location/update",
 		controllers.LocationUpdate,
 	},
+	Route{
+		"LocationDangerZones",
+		"GET",
+		"/location/dangerzones",
+		controllers.LocationDangerZones,
+	},
 }

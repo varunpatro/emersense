@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"../models"
 	"encoding/json"
 	"github.com/kellydunn/golang-geo"
 	"net/http"
@@ -8,12 +9,17 @@ import (
 	"time"
 )
 
-type UserLocation struct {
-	Point *geo.Point
-	Time  time.Time
+type status struct {
+	status bool `json:"status"`
 }
 
-var uuidToLocation = make(map[string]UserLocation)
+type DangerPoint struct {
+	Lat    float64 `json:"latitude"`
+	Long   float64 `json:"longitude"`
+	Radius float64 `json:"radius"`
+}
+
+var uuidToLocation = make(map[string]models.UserLocation)
 var DangerZones = getDangerZones()
 var thresholdDist = 0.050
 
@@ -24,32 +30,38 @@ func LocationUpdate(w http.ResponseWriter, r *http.Request) {
 	timeVal, _ := strconv.ParseInt(r.URL.Query().Get("timestamp"), 10, 64)
 	time := time.Unix(timeVal, 0)
 
-	ul := UserLocation{
+	ul := models.UserLocation{
 		Point: geo.NewPoint(lat, long),
 		Time:  time,
 	}
 	uuidToLocation[uuidStr] = ul
 
-	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-	w.WriteHeader(http.StatusOK)
-	type status struct {
-		status bool `json:"status"`
-	}
 	s := status{status: false}
-	for _, pt := range DangerZones {
-		if ul.Point.GreatCircleDistance(pt) > thresholdDist {
+	for _, dz := range DangerZones {
+		if ul.Point.GreatCircleDistance(geo.NewPoint(dz.Lat, dz.Long)) > thresholdDist {
 			s.status = true
 			break
 		}
 	}
+
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
 	if err := json.NewEncoder(w).Encode(s); err != nil {
 		panic(err)
 	}
 }
 
-func getDangerZones() []*geo.Point {
-	points := make([]*geo.Point, 0)
-	points = append(points, geo.NewPoint(1.29565, 103.856611))  // south beach tower
-	points = append(points, geo.NewPoint(1.297588, 103.854308)) // national library
+func LocationDangerZones(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
+	if err := json.NewEncoder(w).Encode(getDangerZones()); err != nil {
+		panic(err)
+	}
+}
+
+func getDangerZones() []DangerPoint {
+	points := make([]DangerPoint, 0)
+	points = append(points, DangerPoint{Lat: 1.29565, Long: 103.856611, Radius: 0.05})  // south beach tower
+	points = append(points, DangerPoint{Lat: 1.297588, Long: 103.854308, Radius: 0.05}) // national library
 	return points
 }
