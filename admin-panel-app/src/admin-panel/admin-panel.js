@@ -21,6 +21,11 @@ Polymer({
         value: {},
         notify: true
       },
+      sheetUrl: {
+        type: String,
+        value: "https://docs.google.com/spreadsheets/d/1Q9xcqMUXLHF57-NvCQXSv2Q_NTT7L_rVsBqRNHL9E1c",
+        notify: true
+      }
     },
     doLogin: function() {
         console.log(this.$);
@@ -37,6 +42,10 @@ Polymer({
             sender.generateRequest();       
             this.alertSent = true;
         }
+    },
+    onEmergencyResponse: function(res){
+      resp = res.detail.response;
+      this.sheetUrl = resp.sheet_url;
     },
     computeTitle: function(userId) {
         console.log('Here');
