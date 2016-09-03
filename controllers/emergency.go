@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/kr/pretty"
 	"github.com/nu7hatch/gouuid"
 	"github.com/sfreiberg/gotwilio"
 
@@ -24,21 +25,21 @@ func init() {
 	twilio = gotwilio.NewTwilioClient(accountSid, authToken)
 }
 
-var emergencies = make(map[int]models.Emergency)
+var emergencies = make(map[int]*models.Emergency)
 
 var uuidToEmergency = make(map[string]*models.Emergency)
 var uuidToUser = make(map[string]*models.User)
 
 func EmergencyAll(w http.ResponseWriter, r *http.Request) {
-	emap := make(map[int]string)
-	keys := make([]int, 0, len(emap))
-	for k := range emap {
+	keys := make([]int, 0)
+	for k := range emergencies {
 		keys = append(keys, k)
 	}
 
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
-	if err := json.NewEncoder(w).Encode(keys); err != nil {
+	fmt.Println(keys)
+	if err := json.NewEncoder(w).Encode(pretty.Sprint(keys)); err != nil {
 		panic(err)
 	}
 }
@@ -52,10 +53,15 @@ func EmergencyGet(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	e := emergencies[id]
+	e, ok := emergencies[id]
+	if !ok {
+		w.Write([]byte("emergency not present"))
+		return
+	}
+
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
-	if err := json.NewEncoder(w).Encode(e); err != nil {
+	if err := json.NewEncoder(w).Encode(*e); err != nil {
 		panic(err)
 	}
 }
@@ -75,7 +81,7 @@ func EmergencyCreate(w http.ResponseWriter, r *http.Request) {
 		CreatedAt:   time.Now(),
 		PendingList: pendingUserList,
 	}
-	emergencies[emergencyCount] = newEmergency
+	emergencies[emergencyCount] = &newEmergency
 
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
@@ -102,21 +108,24 @@ func EmergencyRespond(w http.ResponseWriter, r *http.Request) {
 
 	user := uuidToUser[uuidStr]
 
-	for i, val := range emergency.PendingList {
-		if val.User.Id == user.Id {
-			emergency.PendingList[i] = emergency.PendingList[len(emergency.PendingList)-1]
-			//emergency.PendingList[len(emergency.PendingList)-1] = nil
-			emergency.PendingList = emergency.PendingList[:len(emergency.PendingList)-1]
-			break
-		}
-	}
-
 	emergency.SafeList = append(emergency.SafeList, models.UserStatus{
 		User:      *user,
 		UpdatedAt: time.Now(),
 	})
 
+	for i, val := range emergency.PendingList {
+		if val.User.Id == user.Id {
+			emergency.PendingList[i] = emergency.PendingList[len(emergency.PendingList)-1]
+			//emergency.PendingList[len(emergency.PendingList)-1] = models.UserStatus{}
+			emergency.PendingList = emergency.PendingList[:len(emergency.PendingList)-1]
+			break
+		}
+	}
+
 	w.Write([]byte("safely responded"))
+	delete(uuidToEmergency, uuidStr)
+	delete(uuidToEmergency, uuidStr)
+	fmt.Println(*emergency)
 }
 
 func sendPhoneNotifs(emergency *models.Emergency) {
