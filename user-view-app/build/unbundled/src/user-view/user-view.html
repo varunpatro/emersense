@@ -92,7 +92,7 @@
                   <template is="dom-if" if="[[updateLocSuccess]]">
                       <div class="premsg">Your location has been successfully relayed to the fire warden.</div>
                   </template>
-                  <google-map latitude="[[latitude]]" longitude="[[longtitude]]" api-key="AIzaSyA-1BPjLQlQRTQw3JK-ujdnrcQdro0ey30" zoom="15">
+                  <google-map latitude="{{latitude}}" longitude="{{longtitude}}" api-key="AIzaSyA-1BPjLQlQRTQw3JK-ujdnrcQdro0ey30" zoom="15">
                       <google-map-marker latitude="{{latitude}}" longitude="{{longtitude}}" draggable="true" title="your location"></google-map-marker>
                   </google-map>
                   <iron-ajax id="location-ajax" url="/location/update" params="[[getLocationParams(uuid)]]" last-response="{{locationResponse}}" handle-as="json" debounce-duration="300"></iron-ajax>
