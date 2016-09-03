@@ -5,6 +5,7 @@
 <link rel="import" href="../../bower_components/paper-styles/color.html">
 <link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../../bower_components/google-map/google-map.html">
 
 <dom-module id="user-view">
   <template>
@@ -40,7 +41,16 @@
 		.spacer {
             @apply(--center-justified);
 		  @apply(--layout-flex);
-		}	
+		}
+        google-map {
+            margin: 15px 8px;
+            height: 500px;
+        }
+        .premsg{
+            font-size: 16px;
+            font-family: "roboto";
+            margin: 8px;
+        }
     </style>
       <paper-scroll-header-panel fixed>
 
@@ -48,23 +58,42 @@
 		  <div class="spacer title">EmerSense</div>
 		  <paper-icon-button icon="more-vert"></paper-icon-button>
 		</paper-toolbar>
-
-        <div class="content">
-            <paper-button raised on-tap="markAsSafe">I'm Safe</paper-button>
-            <paper-button raised on-tap="markAsUnsafe">I Need Help</paper-button>
-        </div>
-        <iron-ajax id="safe-ajax"
-            url = "/emergency/respond/safe"
-            params = '[[getParams(uuid)]]'
-            last-response={{safeResponse}}
-            handle-as="json"
-            debounce-duration=300 ></iron-ajax>
-        <iron-ajax id="unsafe-ajax"
-            url = "/emergency/respond/unsafe"
-            params = '[[getParams(uuid)]]'
-            last-response={{unsafeResponse}}
-            handle-as="json"
-            debounce-duration=300 ></iron-ajax>
+          <template is="dom-if" if="[[!showMap]]">
+            <div class="content">
+                <paper-button raised on-tap="markAsSafe">I'm Safe</paper-button>
+                <paper-button raised on-tap="markAsUnsafe">I Need Help</paper-button>
+            </div>
+            <iron-ajax id="safe-ajax"
+                url = "/emergency/respond/safe"
+                params = '[[getParams(uuid)]]'
+                last-response={{safeResponse}}
+                handle-as="json"
+                debounce-duration=300 ></iron-ajax>
+            <iron-ajax id="unsafe-ajax"
+                url = "/emergency/respond/unsafe"
+                params = '[[getParams(uuid)]]'
+                last-response={{unsafeResponse}}
+                handle-as="json"
+                debounce-duration=300 ></iron-ajax>
+          </template>
+          <template is="dom-if" if="[[showMap]]">
+              <div class="content">
+                      <paper-button raised on-tap="callForHelp">Broadcast Location</paper-button>
+                  <template is="dom-if" if="[[updateLocSuccess]]">
+                      <div class="premsg">Your location has been successfully relayed to the fire warden.</div>
+                  </template>
+                  <google-map latitude="[[latitude]]" longitude="[[longtitude]]" api-key="AIzaSyA-1BPjLQlQRTQw3JK-ujdnrcQdro0ey30" zoom="15">
+                      <google-map-marker latitude="{{latitude}}" longitude="{{longtitude}}"
+                                         draggable="true" title="your location"></google-map-marker>
+                  </google-map>
+                  <iron-ajax id="location-ajax"
+                             url = "/location/update"
+                             params='[[getLocationParams(uuid)]]'
+                             last-response={{locationResponse}}
+                             handle-as="json"
+                             debounce-duration=300></iron-ajax>
+              </div>
+          </template>
 	  </paper-scroll-header-panel> 
   </template>
   <script src="user-view.js"></script>

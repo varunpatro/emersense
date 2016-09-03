@@ -21,6 +21,26 @@ Polymer({
             value: {},
             notify: true,
         },
+        showMap: {
+            type: Boolean,
+            value: false,
+            notify: true
+        },
+        latitude: {
+            type: Number,
+            value: 1.2956504,
+            notify: true
+        },
+        longtitude: {
+            type: Number,
+            value: 103.8566111,
+            notify: true
+        },
+        updateLocSuccess: {
+          type: Boolean,
+          value: false,
+          notify: true
+        }
     },
     ready: function() {
         this.uuid = this.getUuid();
@@ -47,9 +67,33 @@ Polymer({
     },
     markAsUnsafe: function() {
         this.isSafe = false;
+        this.showMap = true;
         if (this.uuid && this.uuid !== "") {
             document.querySelector('#unsafe-ajax').generateRequest();
             console.log(this.unsafeResponse);
         }
+        this.triggerLocationService()
     },
+    triggerLocationService: function(){
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position){
+                this.latitude = position.coords.latitude;
+                this.longtitude = position.coords.longtitude;
+            });
+        }
+    },
+    callForHelp: function() {
+        if(this.uuid && this.uuid !== "") {
+            document.querySelector('#location-ajax').generateRequest();
+        }
+      this.updateLocSuccess = true;
+    },
+    getLocationParams: function(uuid){
+        return {
+            uuid: uuid,
+            latitude: this.latitude,
+            longtitude: this.longtitude,
+            timestamp: Date.now()
+        }
+    }
 });
