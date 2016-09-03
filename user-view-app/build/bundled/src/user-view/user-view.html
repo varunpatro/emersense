@@ -3,6 +3,7 @@
 <link rel="import" href="../../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
 <link rel="import" href="../../bower_components/paper-styles/color.html">
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
 
 </head><body><dom-module id="user-view">
@@ -11,15 +12,18 @@
       <paper-scroll-header-panel fixed="">
 
 		<paper-toolbar>
-		  <div class="spacer title">FbHack</div>
+		  <div class="spacer title">EmerSense</div>
 		  <paper-icon-button icon="more-vert"></paper-icon-button>
 		</paper-toolbar>
 
         <div class="content">
-            <paper-input raised="" on-tap="markAsSafe">I'm Safe</paper-input>
-            <paper-input raised="" on-tap="markAsUnsafe">I Need Help</paper-input>
+            <paper-button raised="" on-tap="markAsSafe">I'm Safe</paper-button>
+            <paper-button raised="" on-tap="markAsUnsafe">I Need Help</paper-button>
         </div>
-  </paper-scroll-header-panel></template>
-  <script type="javascript" src="user-view.js"></script>
+        <iron-ajax id="safe-ajax" url="/emergency/respond/safe" params="[[getParams(uuid)]]" last-response="{{safeResponse}}" handle-as="json" debounce-duration="300"></iron-ajax>
+        <iron-ajax id="unsafe-ajax" url="/emergency/respond/unsafe" params="[[getParams(uuid)]]" last-response="{{unsafeResponse}}" handle-as="json" debounce-duration="300"></iron-ajax>
+	  </paper-scroll-header-panel> 
+  </template>
+  <script src="user-view.js"></script>
 </dom-module>
 </body></html>
