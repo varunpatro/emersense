@@ -21,6 +21,19 @@ Polymer({
             value: {},
             notify: true,
         },
+        pollUrl: {
+            type: String,
+            value: "/location/update",
+            notify: true,
+        },
+        latitude: {
+            type: String,
+            value: "1.29525",
+        },
+        longitude: {
+            type: String,
+            value: "103.85676",
+        },
     },
     ready: function() {
         this.uuid = this.getUuid();
@@ -35,7 +48,7 @@ Polymer({
 		if (!results[2]) return '';
 		return decodeURIComponent(results[2].replace(/\+/g, " ")); 
     },
-    getParams: function(uuid) {
+    getSafetyParams: function(uuid) {
         return {uuid: uuid};
     },
     markAsSafe: function() {
@@ -50,6 +63,23 @@ Polymer({
         if (this.uuid && this.uuid !== "") {
             document.querySelector('#unsafe-ajax').generateRequest();
             console.log(this.unsafeResponse);
+        }
+    },
+    getCurrentPosition: function() {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            this.latitude = position.coords.latitude.toString();
+            this.longitude = position.coords.longitude.toString();
+        });
+    },
+    pollServer: function() {
+        document.querySelector("#poller").generateRequest();
+    },
+    getLocationParams: function(latitude, longitude, uuid) {
+        return {
+            latitude: latitude,
+            longitude: longitude,
+            uuid: uuid,
+            timestamp: Date.now().toString(),
         }
     },
 });

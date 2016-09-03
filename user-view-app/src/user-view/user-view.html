@@ -1,10 +1,16 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="../../bower_components/paper-scroll-header-panel/paper-scroll-header-panel.html">
 <link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-toggle-button/paper-toggle-button.html">
 <link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../../bower_components/paper-item/paper-item-body.html">
 <link rel="import" href="../../bower_components/paper-styles/color.html">
 <link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../../bower_components/platinum-push-messaging/platinum-push-messaging.html">
+<link rel="manifest" href="manifest.json">
 
 <dom-module id="user-view">
   <template>
@@ -47,19 +53,104 @@
             <paper-button raised on-tap="markAsSafe">I'm Safe</paper-button>
             <paper-button raised on-tap="markAsUnsafe">I Need Help</paper-button>
         </div>
+        <div class="push-notifications">
+            <div id="unsupported" style="display: none;" class="warning">
+                Sorry, your browser doesn't support push notifications.
+            </div>
+            <div id="supported">
+               <paper-material elevation="1" style="margin: 20px auto; background-color: white; max-width: 800px;">
+				<paper-item>
+				  <paper-item-body two-line class="layout vertical">
+					<div>
+					  Enable push messaging
+					</div>
+					<div>
+					  <paper-toggle-button id="enable-push" toggles disabled></paper-toggle-button>
+					</div>
+				  </paper-item-body>
+				</paper-item>
+				<paper-item>
+				  <paper-item-body two-line class="layout vertical">
+					<div>
+					  <pre class="paper-font-code1" style="overflow: auto; margin: 5px;" id="subscription"></pre>
+					</div>
+				  </paper-item-body>
+				</paper-item>
+				<paper-item>
+				  <paper-item-body two-line class="layout vertical">
+					<div>
+					  Current subscription
+					</div>
+					<div>
+					  <pre class="paper-font-code1" style="overflow: auto; margin: 5px;" id="subscription"></pre>
+					</div>
+				  </paper-item-body>
+				</paper-item>
+				<paper-item id="send-instructions">
+				  <paper-item-body two-line class="layout vertical">
+					<div>
+					  Send a push (Mac/Unix)
+					</div>
+					<div>
+					  <pre class="paper-font-code1" style="overflow: auto; margin: 5px;">curl https://android.googleapis.com/gcm/send -d "registration_id=<span id="registration-id"></span>" --header "Authorization: key=[YOUR_PUBLIC_API_KEY]"</pre>
+					</div>
+				  </paper-item-body>
+				</paper-item>
+			  </paper-material> 
+        </div>
+        <platinum-push-messaging title="Be careful out there"
+                                 message="You're entering a dengue cluster"
+                                 >
+        </platinum-push-messaging>
         <iron-ajax id="safe-ajax"
             url = "/emergency/respond/safe"
-            params = '[[getParams(uuid)]]'
+            params = '[[getSafetyParams(uuid)]]'
             last-response={{safeResponse}}
             handle-as="json"
             debounce-duration=300 ></iron-ajax>
         <iron-ajax id="unsafe-ajax"
             url = "/emergency/respond/unsafe"
-            params = '[[getParams(uuid)]]'
+            params = '[[getSafetyParams(uuid)]]'
             last-response={{unsafeResponse}}
             handle-as="json"
             debounce-duration=300 ></iron-ajax>
 	  </paper-scroll-header-panel> 
   </template>
+  <script>
+	  document.addEventListener('WebComponentsReady', function() {
+      var ppm = document.querySelector('platinum-push-messaging');
+      var toggle = document.getElementById('enable-push');
+      var subscription = document.getElementById('subscription');
+      var registrationId = document.getElementById('registration-id');
+      var sendInstructions = document.getElementById('send-instructions');
+      toggle.disabled = !ppm.supported;
+      if (!ppm.supported) {
+        document.getElementById('supported').style.display = 'none';
+        document.getElementById('unsupported').style.display = '';
+      }
+      toggle.addEventListener('change', function() {
+        if (toggle.checked) {
+          ppm.enable();
+        } else {
+          ppm.disable();
+        }
+      });
+      ppm.addEventListener('subscription-changed', function(event) {
+        // GCM always needs the subscriptionId passed separately. Note that as of M45,
+        // the subscriptionId and the endpoint have merged.
+        var subscriptionId = ppm.subscription ? ppm.subscription.subscriptionId : undefined;
+        if (ppm.subscription && !ppm.subscription.subscriptionId) {
+          var endpointSections = ppm.subscription.endpoint.split('/');
+          subscriptionId = endpointSections[endpointSections.length - 1];
+        }
+        subscription.textContent = JSON.stringify(ppm.subscription || undefined, null, 2);
+        registrationId.textContent = subscriptionId ? subscriptionId : '';
+      });
+      ppm.addEventListener('enabled-changed', function(event) {
+        toggle.checked = ppm.enabled;
+        sendInstructions.style.display = ppm.enabled ? '' : 'none';
+      });
+    });	  
+  </script>
   <script src="user-view.js"></script>
 </dom-module>

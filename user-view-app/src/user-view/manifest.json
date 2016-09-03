@@ -1,0 +1,5 @@
+{
+    "gcm_sender_id": "robust-flow-142304",
+    "gcm_user_visible_only": true,
+    "permissions": ["gcm"]
+}
