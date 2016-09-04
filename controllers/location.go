@@ -28,12 +28,17 @@ func LocationUpdate(w http.ResponseWriter, r *http.Request) {
 	uuidStr := r.URL.Query().Get("uuid")
 	lat, _ := strconv.ParseFloat(r.URL.Query().Get("latitude"), 64)
 	long, _ := strconv.ParseFloat(r.URL.Query().Get("longitude"), 64)
-	timeVal, _ := strconv.ParseInt(r.URL.Query().Get("timestamp"), 10, 64)
-	time := time.Unix(timeVal, 0)
+	//timeVal, _ := strconv.ParseInt(r.URL.Query().Get("timestamp"), 10, 64)
+	safeStr := r.URL.Query().Get("safe")
+	safe, _ := strconv.ParseBool(safeStr)
+	//time := time.Unix(timeVal, 0)
 
 	ul := models.UserLocation{
-		Point: geo.NewPoint(lat, long),
-		Time:  time,
+		Safe: safe,
+		Lat:  lat,
+		Long: long,
+		//Time:  time,
+		Time: time.Now(),
 	}
 	uuidToLocation[uuidStr] = ul
 	user := uuidToUser[uuidStr]
@@ -63,7 +68,7 @@ func LocationUpdate(w http.ResponseWriter, r *http.Request) {
 
 	s := status{status: false}
 	for _, dz := range DangerZones {
-		if ul.Point.GreatCircleDistance(geo.NewPoint(dz.Lat, dz.Long)) > thresholdDist {
+		if geo.NewPoint(ul.Lat, ul.Long).GreatCircleDistance(geo.NewPoint(dz.Lat, dz.Long)) > thresholdDist {
 			s.status = true
 			break
 		}
@@ -80,6 +85,18 @@ func LocationDangerZones(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
 	if err := json.NewEncoder(w).Encode(getDangerZones()); err != nil {
+		panic(err)
+	}
+}
+
+func LocationAll(w http.ResponseWriter, r *http.Request) {
+	uls := make([]models.UserLocation, 0)
+	for _, ul := range uuidToLocation {
+		uls = append(uls, ul)
+	}
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
+	if err := json.NewEncoder(w).Encode(uls); err != nil {
 		panic(err)
 	}
 }

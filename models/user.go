@@ -1,7 +1,6 @@
 package models
 
 import (
-	"github.com/kellydunn/golang-geo"
 	"time"
 )
 
@@ -19,6 +18,8 @@ type UserStatus struct {
 }
 
 type UserLocation struct {
-	Point *geo.Point
-	Time  time.Time
+	Safe bool      `json:"safe"`
+	Lat  float64   `json:"latitude"`
+	Long float64   `json:"longitude"`
+	Time time.Time `json:"time"`
 }
