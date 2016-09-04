@@ -20,8 +20,19 @@
             <template is="dom-if" if="[[!showZikaMap]]">
                 <div class="content">
                     <div class="status-title">Status for: South Beach Tower Fire</div>
-                    <paper-button raised="" on-tap="markAsSafe">I'm Safe</paper-button>
-                    <paper-button raised="" on-tap="markAsUnsafe">I Need Help</paper-button>
+                    <template is="dom-if" if="[[!marked]]">
+                        <paper-button raised="" on-tap="markAsSafe">I'm Safe</paper-button>
+                        <paper-button raised="" on-tap="markAsUnsafe">I Need Help</paper-button>
+                    </template>
+                    <template is="dom-if" if="[[marked]]">
+                        <template is="dom-if" if="[[isSafe]]">
+                            You have been marked as safe. Stay safe.
+                        </template>
+                        <template is="dom-if" if="[[!isSafe]]">
+                            The Emergency Response Team has been alerted - help is on the way!
+                        </template>
+                    </template>
+
                     <div class="spacing">
                     <paper-button raised="" on-tap="goToZikaView">View Current Situations</paper-button>
                 </div>
@@ -30,22 +41,10 @@
              </div></template>
              <template is="dom-if" if="[[showZikaMap]]">
                  <div class="status-title">Current Zika virus hotspots</div>
-                  <google-map id="zika-map" latitude="[[latitude]]" longitude="[[longtitude]]" api-key="AIzaSyA-1BPjLQlQRTQw3JK-ujdnrcQdro0ey30" zoom="12">
+                 <google-map id="zika-map" latitude="{{latitude}}" longitude="{{longtitude}}" api-key="AIzaSyA-1BPjLQlQRTQw3JK-ujdnrcQdro0ey30" zoom="12">
                       <google-map-marker latitude="{{latitude}}" longitude="{{longtitude}}" draggable="true" title="your location"></google-map-marker>
                   </google-map>
              </template>
-          </template>
-          <template is="dom-if" if="[[showMap]]">
-              <div class="content">
-                      <paper-button raised="" on-tap="callForHelp">Broadcast Location</paper-button>
-                  <template is="dom-if" if="[[updateLocSuccess]]">
-                      <div class="premsg">Your location has been successfully relayed to the fire warden.</div>
-                  </template>
-                  <google-map latitude="{{latitude}}" longitude="{{longtitude}}" api-key="AIzaSyA-1BPjLQlQRTQw3JK-ujdnrcQdro0ey30" zoom="15">
-                      <google-map-marker latitude="{{latitude}}" longitude="{{longtitude}}" draggable="true" title="your location"></google-map-marker>
-                  </google-map>
-                  <iron-ajax id="location-ajax" url="/location/update" params="[[getLocationParams(uuid)]]" last-response="{{locationResponse}}" handle-as="json" debounce-duration="300"></iron-ajax>
-              </div>
           </template>
 	  </paper-scroll-header-panel>
   </template>

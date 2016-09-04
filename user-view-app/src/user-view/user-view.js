@@ -11,6 +11,11 @@ Polymer({
             value: false,
             notify: true
         },
+        marked: {
+            type: Boolean,
+            value: false,
+            notify: true
+        },
         safeResponse: {
             type: Object,
             value: {},
@@ -54,6 +59,9 @@ Polymer({
         this.uuid = this.getUuid();
         console.log(this.uuid);
     },
+    attached: function() {
+        this.triggerLocationService();
+    },
     getUuid: function() {
 		url = window.location.href;
 		name = ("uuid").replace(/[\[\]]/g, "\\$&");
@@ -68,6 +76,7 @@ Polymer({
     },
     markAsSafe: function() {
         this.isSafe = true;
+        this.marked = true;
         if (this.uuid && this.uuid !== "") {
             document.querySelector('#safe-ajax').generateRequest();
             console.log(this.safeResponse);
@@ -75,12 +84,11 @@ Polymer({
     },
     markAsUnsafe: function() {
         this.isSafe = false;
-        this.showMap = true;
+        this.marked = true;
         if (this.uuid && this.uuid !== "") {
             document.querySelector('#unsafe-ajax').generateRequest();
             console.log(this.unsafeResponse);
         }
-        this.triggerLocationService()
     },
     goToZikaView: function() {
         this.showZikaMap = true;
@@ -89,8 +97,10 @@ Polymer({
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position){
                 this.latitude = position.coords.latitude;
-                this.longtitude = position.coords.longtitude;
-            });
+                this.longtitude = position.coords.longitude;
+console.log(position.coords);
+                this.callForHelp();
+            }.bind(this));
         }
     },
     callForHelp: function() {
@@ -104,8 +114,8 @@ Polymer({
             uuid: uuid,
             latitude: this.latitude,
             longtitude: this.longtitude,
-            timestamp: Date.now()
-        }
+            timestamp: Date.now().toString()
+        };
     },
 	addCircles: function() {
 		zikaMap = document.querySelector("#zika-map");
