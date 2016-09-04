@@ -9,7 +9,7 @@ var mockUsers = []models.User{{
 }, {
 	Id:    2,
 	Name:  "Weihan",
-	Phone: "+90011282",
+	Phone: "+6590011282",
 },
 }
 
@@ -18,7 +18,6 @@ func GetMockUsers() []models.User {
 }
 
 func GetUsers() []models.User {
-	return mockUsers
 	data := GetData()
 	users := make([]models.User, 0)
 	for _, u := range data {
