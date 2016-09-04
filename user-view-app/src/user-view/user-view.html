@@ -91,6 +91,7 @@
                     debounce-duration=300 ></iron-ajax>
              </template>
              <template is="dom-if" if="[[showZikaMap]]">
+                 <div class="status-title">Current Zika virus hotspots</div>
                   <google-map id="zika-map" latitude="[[latitude]]" longitude="[[longtitude]]" api-key="AIzaSyA-1BPjLQlQRTQw3JK-ujdnrcQdro0ey30" zoom="12">
                       <google-map-marker latitude="{{latitude}}" longitude="{{longtitude}}"
                                          draggable="true" title="your location"></google-map-marker>
@@ -115,7 +116,7 @@
                              debounce-duration=300></iron-ajax>
               </div>
           </template>
-	  </paper-scroll-header-panel> 
+	  </paper-scroll-header-panel>
   </template>
   <script src="user-view.js"></script>
 </dom-module>
