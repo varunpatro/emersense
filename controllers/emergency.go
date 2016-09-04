@@ -16,6 +16,7 @@ import (
 	"io/ioutil"
 	"strconv"
 	"strings"
+	"os"
 )
 
 var twilio *gotwilio.Twilio
@@ -190,6 +191,6 @@ func sendPhoneNotifs(emergency *models.Emergency) {
 func sendClickLink(user models.User, uuidStr string) {
 	from := "+12016056631"
 	to := user.Phone
-	message := "Hi " + user.Name + ", click here to alert your safety: http://172.22.117.167:8080/emergency/respond/safe?uuid=" + uuidStr
+	message := "Hi " + user.Name + ", click here to alert your safety: http://" + os.Getenv("EXTERNAL_IP") + ":8080/emergency/respond/safe?uuid=" + uuidStr
 	fmt.Println(twilio.SendSMS(from, to, message, "", ""))
 }

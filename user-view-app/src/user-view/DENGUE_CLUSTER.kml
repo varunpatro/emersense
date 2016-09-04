@@ -1,0 +1,4526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="DENGUE_CLUSTER">
+  <name>DENGUE_CLUSTER</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>DENGUE_CLUSTER</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Ang Mo Kio Ave 3 (Blk 103) / Ang Mo Kio Ave 4 (Blk 110)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161626.jpg">http://www.dengue.gov.sg/cms/ehd/20161626.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>64A196909694F219</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/26/2016 8:14:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>28558.4963</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>39212.2322</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2043.805244</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>142672.665964</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8365715255501,1.371038683416995,0 103.8358648354448,1.370938978112243,0 103.835152510542,1.370947329663207,0 103.8352655637542,1.370360644047511,0 103.8352571430285,1.370083576681825,0 103.8351984914007,1.369906465122452,0 103.8352308489198,1.369905722613807,0 103.8361913481036,1.370092359834001,0 103.8368855687664,1.369144810313307,0 103.8374493825612,1.369491224338073,0 103.8377186393337,1.369602298783631,0 103.8378946253959,1.369695003931674,0 103.8384018849023,1.369881932290539,0 103.8388868379022,1.369863807748727,0 103.8403301554279,1.369743949451598,0 103.8404792227945,1.369724152474877,0 103.8401951533187,1.370373788920312,0 103.8405705672686,1.370425884617013,0 103.8405527297504,1.370728073471631,0 103.8410082801341,1.370792161628942,0 103.8409909713665,1.370918096218202,0 103.841017651407,1.37109878992209,0 103.8411101289444,1.371724397168674,0 103.8406634975766,1.371653320077834,0 103.8406290247813,1.371944643948873,0 103.8405841609439,1.371952193718977,0 103.8405577016299,1.372255708394111,0 103.8400177805332,1.37219165656599,0 103.839890432111,1.372444196119128,0 103.8398554204287,1.372536862803827,0 103.8393528088762,1.372476250019665,0 103.8392468951388,1.372463384799536,0 103.8391261453915,1.372575326400912,0 103.8389349242743,1.372302663747082,0 103.838777417532,1.372401368237516,0 103.8386370115534,1.372121699332221,0 103.8382020433356,1.372346122777151,0 103.8381583718277,1.372324011159917,0 103.8379276624512,1.371696016547655,0 103.8379163476022,1.371673778252092,0 103.8369701438027,1.372004441691027,0 103.8367559578032,1.372089258716326,0 103.836623140281,1.371641769514867,0 103.8365613988863,1.371209813569598,0 103.8365715255501,1.371038683416995,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Yishun Ring Rd (Blk 363, 365)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161627.jpg">http://www.dengue.gov.sg/cms/ehd/20161627.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>A2DA3200225F0298</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/26/2016 8:14:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>29249.6148</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>45588.1896</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1555.358172</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>129758.30226</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8439175326257,1.431158196398003,0 103.8438991358134,1.430982953388505,0 103.8439003962325,1.430326471177878,0 103.8438653927654,1.43000669282026,0 103.8436381708282,1.42959203672136,0 103.8434617984451,1.429358526253106,0 103.8427900774026,1.428624770839283,0 103.84314162782,1.428266237032815,0 103.8430622718333,1.428176539855216,0 103.8431206238908,1.426512463133485,0 103.8433904602642,1.426514443423871,0 103.8453019947446,1.426586218097219,0 103.8453152709367,1.426836261964888,0 103.845312528706,1.427583518815027,0 103.8462479589942,1.427617125305407,0 103.8462426840602,1.427903961502374,0 103.8462224407031,1.428573048852659,0 103.8461942541535,1.428987195182593,0 103.8461386619634,1.429339714697685,0 103.8460605825742,1.429549102485807,0 103.8459720312465,1.429645404157479,0 103.8456644220158,1.429955697582798,0 103.8451968987787,1.430392164119366,0 103.844588220377,1.430948393445605,0 103.8442568182036,1.431149464973603,0 103.8439175326257,1.431158196398003,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Jln Melor / Macpherson Ln (Blk 82)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>3</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161616.jpg">http://www.dengue.gov.sg/cms/ehd/20161616.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>A7EDB770A4044F0E</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/26/2016 8:14:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>33721.6209</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>34878.5291</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1447.462213</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>83947.462609</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8848116913138,1.330110924072816,0 103.8848425401637,1.330310484954706,0 103.8850055781353,1.330678564993269,0 103.8854241814026,1.331166375610592,0 103.8859265001397,1.331547750634905,0 103.886547788749,1.331929123871109,0 103.8871470464564,1.332297192419493,0 103.8869355623992,1.333051100350297,0 103.8858295895903,1.332802779591956,0 103.8852479637465,1.332665315075664,0 103.8837278009271,1.332332743391748,0 103.8824059228425,1.332044513186931,0 103.8824676030336,1.33171190758441,0 103.882864167142,1.331796159213118,0 103.8827672157944,1.331082170129661,0 103.8832871510962,1.331011204073288,0 103.8832386745233,1.330634253387248,0 103.884053826553,1.330518933836346,0 103.8840185699735,1.330212938407779,0 103.8848116913138,1.330110924072816,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Jln Setia / Joo Seng Rd (Blk 15) / Upp Aljunied Ln (Blk 3)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>3</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161598.jpg">http://www.dengue.gov.sg/cms/ehd/20161598.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>B8D22C72424C2699</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/26/2016 8:14:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>33245.3131</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>35185.0354</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2101.945926</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>189614.58377</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8809494393269,1.337258568029442,0 103.8805835560827,1.336726678752069,0 103.880201425729,1.336882163515192,0 103.8799818929061,1.336366637603423,0 103.8797135893047,1.336481204864885,0 103.8794290109172,1.3359165803879,0 103.8789249264348,1.336211179272049,0 103.8787379227884,1.336047521766995,0 103.878518397969,1.335949329968457,0 103.8782663472061,1.335654746100633,0 103.8780630843629,1.335646566239586,0 103.87850209526,1.333723546016723,0 103.8787215982988,1.33264338192322,0 103.8798993904835,1.332903260524447,0 103.8800599923566,1.332197301675706,0 103.8819997893458,1.33261470214423,0 103.8821082536115,1.332088085976672,0 103.8824847275812,1.332158721956964,0 103.8824847380185,1.332685335962206,0 103.8825421734314,1.333077085495729,0 103.8826825616875,1.333507365600324,0 103.8822231487594,1.334111054224364,0 103.8826123984101,1.334843169034528,0 103.881290891942,1.335851081221118,0 103.8817380747524,1.336145660901803,0 103.8818356433516,1.336309319948231,0 103.8819413456814,1.336562992006565,0 103.8809494393269,1.337258568029442,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00004">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Beach Rd (Blk 5)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161601.jpg">http://www.dengue.gov.sg/cms/ehd/20161601.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>68C7403C2C4319B3</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/24/2016 6:31:22 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>31522.9523</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>31814.1781</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1328.000508</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>100635.118063</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8649363107633,1.306190647008594,0 103.8646066447921,1.305913357590856,0 103.8634528627041,1.304919572703991,0 103.8633335869085,1.304842033009463,0 103.8630281370303,1.304710767223617,0 103.8639017419396,1.303610825006216,0 103.8638075672205,1.303545004687072,0 103.864241605552,1.30281704641483,0 103.8648486935589,1.301865536904408,0 103.8669405412766,1.303326331711817,0 103.8661621770154,1.304324224301351,0 103.8649363107633,1.306190647008594,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00005">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Clementi Ave 2 (Blk 359, 365)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161629.jpg">http://www.dengue.gov.sg/cms/ehd/20161629.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>B3936B6F355E1B6E</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/29/2016 5:42:38 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>20984.4219</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32869.172</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1617.562605</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>152398.125238</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7692245386082,1.31519112347024,0 103.7689750384101,1.314799820358416,0 103.768775859102,1.314399114051149,0 103.7685301208289,1.313815898600382,0 103.7683178770094,1.313266386038514,0 103.7678852319347,1.312158686896028,0 103.7678503255373,1.312073264263733,0 103.7685251254418,1.311875332011099,0 103.76906573224,1.311860059575581,0 103.7701984402044,1.311923349771568,0 103.7722343709826,1.312108775399106,0 103.7722660961748,1.312585058678593,0 103.7722318241937,1.312861676616477,0 103.7719521451742,1.314969602450712,0 103.7718803378281,1.315509894958624,0 103.77186702704,1.315606491574094,0 103.7707501506376,1.315473279735573,0 103.7702492579036,1.315101340959876,0 103.7700682745784,1.314998779648171,0 103.7695596504851,1.315564503361667,0 103.7692245386082,1.31519112347024,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00006">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Anchorvale Lk (Blk 318C) / Anchorvale Rd (Blk 317D)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161651.jpg">http://www.dengue.gov.sg/cms/ehd/20161651.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>64E7A935D447C291</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>34105.41</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>41674.4978</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1677.855461</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>136333.437979</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8860902513934,1.394686196742044,0 103.8859832032916,1.393456991606074,0 103.8857129303464,1.392919324492523,0 103.8865846534562,1.392491314703025,0 103.8868979879472,1.392299998458804,0 103.8865816367354,1.391761746467993,0 103.887121010877,1.391478745178947,0 103.8872891527108,1.392027954165335,0 103.8880619041588,1.391645781988463,0 103.8882758776608,1.39155006545916,0 103.8884482472085,1.391657737668198,0 103.888572664856,1.391680015547937,0 103.8886186555239,1.391896130256146,0 103.8893777666123,1.39175630664432,0 103.8898885297291,1.391589012417755,0 103.8902285511571,1.392504489723373,0 103.8903261578522,1.392858226484387,0 103.8904899763767,1.393884069316807,0 103.8905357496484,1.394205082023644,0 103.8884152359598,1.394397226080825,0 103.8860902513934,1.394686196742044,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00007">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Golden Walk / Jln Pacheli / Li Hwan Dr / Tai Hwan Cres</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>6</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161596.jpg">http://www.dengue.gov.sg/cms/ehd/20161596.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>96437C6C23EB6762</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>31182.1766</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>37521.8992</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1667.163083</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>139283.085741</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8599396025714,1.354824316988255,0 103.8632622000202,1.354013915132567,0 103.8638742294203,1.353952410680813,0 103.8639287732377,1.353957400270857,0 103.863908944269,1.354431501737278,0 103.8639783663407,1.354636113271575,0 103.8645486077152,1.355384686231743,0 103.8641271363631,1.355709077174608,0 103.8642187582103,1.355824629335033,0 103.8632380586431,1.3566066265136,0 103.8624852679665,1.357166190347801,0 103.8623264176329,1.356929859277068,0 103.8618175632476,1.357283451894032,0 103.8615841138854,1.35695452289373,0 103.8610861031712,1.357299124041046,0 103.8607852135316,1.356860551517847,0 103.860313139584,1.357184267726486,0 103.8600070635767,1.356745695160528,0 103.8598006938822,1.356022504448113,0 103.8593143941765,1.35603745436942,0 103.8594331734683,1.354924073009739,0 103.8599396025714,1.354824316988255,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00008">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Gangsa Rd (Blk 154, 163, 165) / Petir Rd (Blk 168) / Petir Rd (Maysprings) / Upp Bt Timah Rd (The Linear)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>16</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161563.jpg">http://www.dengue.gov.sg/cms/ehd/20161563.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>C179A61D7144B87A</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>20309.5482</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>39843.9667</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1966.933267</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>203466.691921</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7623178230909,1.378760269225564,0 103.7626853531196,1.377625554504199,0 103.7624724274474,1.377500917803381,0 103.7622953134319,1.377257397242145,0 103.7622252382027,1.377107735636107,0 103.7627827917962,1.37397992142248,0 103.7650487756555,1.374418167218584,0 103.7664467124988,1.375078621280092,0 103.7668033184356,1.37560983280062,0 103.7665981871919,1.375734049520012,0 103.7666010298669,1.375781023151083,0 103.7654674941689,1.376566936304507,0 103.7662283787158,1.37783339711626,0 103.7657158981866,1.378128731405879,0 103.765053494526,1.379422990510353,0 103.7643016426491,1.379059922785544,0 103.7639724087893,1.379068584192221,0 103.7633247922969,1.37889938311344,0 103.7632909251963,1.379018286020269,0 103.7623178230909,1.378760269225564,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00009">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Joo Chiat Pl / Joo Chiat Pl (The Glacier) / Lor H, J Telok Kurau</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>8</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161569.jpg">http://www.dengue.gov.sg/cms/ehd/20161569.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>CB51E74CAF5E8BD6</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>36302.8307</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32977.7994</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1852.745377</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>167915.840461</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9055895437192,1.316120562139123,0 103.9061646680929,1.314765331499249,0 103.9075183869391,1.311598433137612,0 103.9089689077207,1.311912829549246,0 103.908760647071,1.31249679541975,0 103.9089540491147,1.312534222974037,0 103.9085196322076,1.313494375820801,0 103.9102432711789,1.313877171020007,0 103.9089476677167,1.316838301706808,0 103.9055895437192,1.316120562139123,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00010">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Lor 14 Geylang (Wing Fong Ct) / Lor 14 Geylang (Wing Fong Mans)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>5</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161603.jpg">http://www.dengue.gov.sg/cms/ehd/20161603.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>51C25D249DA0ED00</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>33066.2379</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32606.3875</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1309.400378</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>91777.151588</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8775106003703,1.312317438662996,0 103.8775512733812,1.311969756837936,0 103.8772778689328,1.311903960127939,0 103.8773172623569,1.311706052837104,0 103.8774644793374,1.310966456458991,0 103.8777153138051,1.309492731332691,0 103.8781981558099,1.309795408039893,0 103.8782195258782,1.309739070271202,0 103.8783203220734,1.309473333619111,0 103.8786334749525,1.309616956392894,0 103.8791583724403,1.309853798934127,0 103.879516734912,1.309945233506534,0 103.8801188476523,1.310093469301128,0 103.8800624472955,1.310175489883253,0 103.8800077569179,1.310599766244678,0 103.8805563574109,1.310733534907109,0 103.8805035283247,1.310982994885172,0 103.8804389380183,1.31098636938808,0 103.8802592077553,1.3121991326983,0 103.880200087979,1.312212995911279,0 103.8798337109082,1.312165148348669,0 103.8797979518007,1.312676342811024,0 103.8795344300221,1.312640688635511,0 103.8787810016093,1.312525225139576,0 103.8782651992567,1.312470449929809,0 103.8775106003703,1.312317438662996,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00011">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Joo Chiat Ave, Pl</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>6</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161592.jpg">http://www.dengue.gov.sg/cms/ehd/20161592.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>2F2B1E364C0CD802</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>36590.8067</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>33095.9543</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1180.739866</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>73321.579755</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9097794029558,1.314930458176085,0 103.910234969239,1.313869176700447,0 103.9118634455963,1.314238766360073,0 103.9114824261677,1.315294765166069,0 103.9117645591508,1.315355118024156,0 103.9116754253267,1.315947338979936,0 103.9115028794456,1.316407455808966,0 103.9110583782975,1.316315961735463,0 103.9107423274257,1.317209570836601,0 103.9089414208286,1.316832759955572,0 103.9097794029558,1.314930458176085,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00012">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Jelapang Rd (Blk 511) / Segar Rd (Blk 547C)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161653.jpg">http://www.dengue.gov.sg/cms/ehd/20161653.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>E3B67F0F92D16E06</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>20800.1561</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>41161.8461</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1712.063068</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>173141.911942</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7668986625571,1.390465642287531,0 103.7668696317842,1.38874502022395,0 103.7667656371452,1.388732313684642,0 103.7668747781262,1.388287668356775,0 103.7669223349511,1.388042407214609,0 103.7669893148505,1.387881159278597,0 103.7667530500036,1.387474991176579,0 103.7664676662969,1.387103220933152,0 103.7665890468704,1.386974976587688,0 103.7666264777849,1.387013310002623,0 103.766848071457,1.386874121162286,0 103.7673030317688,1.386664210396856,0 103.767437927955,1.386626331294228,0 103.7675838735798,1.386568461535945,0 103.7682515432076,1.386149123997916,0 103.768810263154,1.385790220084046,0 103.7696621766191,1.387108344183046,0 103.7706073878079,1.38862086525964,0 103.7706388714256,1.388682241640116,0 103.770799008453,1.388927569909455,0 103.7707862116076,1.390370294479881,0 103.7668986625571,1.390465642287531,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00013">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Yishun Ave 4 (Blk 650, 651, 656, 657, 658, 659, 660, 661, 663A) / Yishun St 61 (Blk 611, 639, 640, 643, 644, 645)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>27</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161428.jpg">http://www.dengue.gov.sg/cms/ehd/20161428.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>6E43320108F04B85</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>28579.1338</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>44746.3581</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>3113.017758</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>413448.77376</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8378902693911,1.423026527646947,0 103.8374762984799,1.422957015407635,0 103.8367654423516,1.422939198804975,0 103.8357060310423,1.422906626768091,0 103.8353746596056,1.422896439428023,0 103.8350528876073,1.422606818064323,0 103.8349713448171,1.422317265227332,0 103.8349517130611,1.421952657376353,0 103.8349456589849,1.421557228793259,0 103.8349075378961,1.421253868996867,0 103.8349043047292,1.421193828280406,0 103.8348957301105,1.420785550494096,0 103.8347562687674,1.420422597700889,0 103.8343115060231,1.419348478597669,0 103.8366470103002,1.418161961821562,0 103.8372903544275,1.418431873640361,0 103.8384249350794,1.418836556169634,0 103.838548639569,1.418543757225198,0 103.8387242021115,1.418091289991025,0 103.8392035511245,1.418285945914388,0 103.8393602749619,1.418316420764063,0 103.8395260465904,1.418308102888839,0 103.8398839272043,1.418193655549243,0 103.8404380789524,1.417961260415225,0 103.8409641994911,1.419213440086337,0 103.8413733322638,1.420187969466666,0 103.8415320361759,1.420565991202121,0 103.8415576266564,1.420692051297023,0 103.8415667513658,1.42081352994317,0 103.8415458671208,1.421033470410097,0 103.8415501413029,1.421171887808779,0 103.8437934183668,1.421295999911251,0 103.8437553120704,1.422343495816558,0 103.8421337565167,1.422354493345929,0 103.8411576438874,1.422072373338159,0 103.840654733861,1.423323351697895,0 103.8405575133931,1.423565182521582,0 103.8403593255939,1.423858198838521,0 103.8398850474378,1.424461817903269,0 103.8390410459328,1.423812336784172,0 103.8381973288549,1.423163076012757,0 103.8378902693911,1.423026527646947,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00014">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Yung An Rd (Blk 363)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>3</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161633.jpg">http://www.dengue.gov.sg/cms/ehd/20161633.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>6C99FA0B5B08275C</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>15431.0193</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>35436.9529</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1194.957689</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>62508.459018</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.720798128285,1.337901246697659,0 103.7200941689833,1.337455011470598,0 103.7198792060719,1.337794122135952,0 103.7197215953536,1.337682611393444,0 103.7193426844805,1.338486696070934,0 103.7186514537361,1.338090781582347,0 103.7193452583675,1.336939336990112,0 103.7194886211834,1.33668727698782,0 103.7195116891438,1.336155463031197,0 103.7196092024856,1.335876947362387,0 103.719948905814,1.335628568170579,0 103.7212674302574,1.335560355966119,0 103.7217722879481,1.335571683613503,0 103.7221259208228,1.335694955350717,0 103.7219349785724,1.336093490300613,0 103.7218065323933,1.336298498965098,0 103.7216361142927,1.336570496375236,0 103.720798128285,1.337901246697659,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00015">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Jurong West St 62 (Blk 604) / Jurong West St 65 (Blk 606, 609)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>3</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161648.jpg">http://www.dengue.gov.sg/cms/ehd/20161648.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>CF3035FB51DE82D2</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>13161.6372</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>35598.9047</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2056.565835</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>173566.558087</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7009409225139,1.340503034152327,0 103.6979473681718,1.339941641397899,0 103.6980446551358,1.339741144329931,0 103.698256289583,1.339264007460769,0 103.6984369999801,1.338822338833088,0 103.6977322285162,1.338649946406587,0 103.6978433993874,1.338492024762463,0 103.6978790736954,1.338265908214985,0 103.697825505907,1.338190597206761,0 103.6977899567784,1.337642106019207,0 103.6977935119608,1.337600331023695,0 103.698086088182,1.337598397462631,0 103.6980966835708,1.33689942932321,0 103.6988529370318,1.336895818403219,0 103.6988743926446,1.336055036012738,0 103.6991701578518,1.336099411241476,0 103.699292402856,1.336146826423479,0 103.6997809759998,1.336251070075292,0 103.7002858558953,1.336243729806284,0 103.7002725463886,1.336312412668204,0 103.7013581555253,1.336357230293029,0 103.7013529909556,1.336973807830463,0 103.7026063705481,1.337038960444616,0 103.7025892193265,1.337676400100134,0 103.7020360602454,1.337588489893143,0 103.7019979918953,1.338148401955874,0 103.7022119598669,1.338179520818944,0 103.7020831577573,1.339031042281872,0 103.7011780023636,1.338892374532812,0 103.7010599399436,1.339783892798087,0 103.7009409225139,1.340503034152327,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00016">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Jln Hitam Manis</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161649.jpg">http://www.dengue.gov.sg/cms/ehd/20161649.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>E6E6D28E3E43EAA4</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>24016.3585</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32341.9756</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1585.449207</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>109357.298799</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7957187729673,1.310321379900097,0 103.7954418732731,1.309743127732522,0 103.7962134115993,1.309509148591392,0 103.7963648476693,1.30937638379763,0 103.7958197287975,1.308728818079213,0 103.7957390669133,1.308617281584617,0 103.7956937178995,1.308570487269994,0 103.7962587250865,1.308122129879599,0 103.7963034373823,1.308206382954553,0 103.7966271528549,1.307947176962645,0 103.7964662925725,1.307734152422655,0 103.7967510627255,1.307502360743044,0 103.7967999095502,1.307565477061716,0 103.7969494026469,1.307444129800391,0 103.797270921214,1.307170443001167,0 103.7974672957236,1.307003283083549,0 103.7974841194281,1.30698896271223,0 103.7974364568094,1.306930963318287,0 103.7976143980057,1.306798180733464,0 103.7977373987814,1.306703095789999,0 103.7978072782593,1.306805413880869,0 103.7979202375463,1.307046586005755,0 103.798018715336,1.307003952037467,0 103.7980410464672,1.307037295371027,0 103.7983726846402,1.306804429775967,0 103.7990528823146,1.307989961703037,0 103.7993483691748,1.308498042291961,0 103.7990559447262,1.308640171842879,0 103.7991869092807,1.308950386969132,0 103.7992762899924,1.309191413108653,0 103.7990050338229,1.30937264314212,0 103.7987369985422,1.309580715634251,0 103.7984565502434,1.30988472110633,0 103.7983417751746,1.31000659166453,0 103.7982589266886,1.310109095699943,0 103.7981845622382,1.310215348443216,0 103.7981790118219,1.310350172841802,0 103.7980934232031,1.310484168614785,0 103.7976393395658,1.310316665690529,0 103.7971115546031,1.310256837969851,0 103.7965302139619,1.310410644669233,0 103.796495366521,1.310221462848699,0 103.7964797105562,1.310136466819948,0 103.7962245530277,1.310219766760818,0 103.7957187729673,1.310321379900097,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00017">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Bedok Cl, Rise, Ter / Bedok Ria Cres (Stratford Ct) / Bedok South Ave 3 (Bedok Ct) / Jln Langgar Bedok / Jln Limau Bali / Jln Limau Kasturi / Jln Limau Manis / Jln Limau Nipis / Jln Limau Purut / Limau Gdn, Rise, Ter</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>48</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161432.jpg">http://www.dengue.gov.sg/cms/ehd/20161432.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>5300FFF2413BBFDF</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>40805.0003</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>34145.0861</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>3903.04403</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>586527.677074</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9444231747728,1.326409288350334,0 103.9441557089354,1.3262896604396,0 103.9444766222298,1.325416274667076,0 103.9445063318824,1.32521288572489,0 103.9444944307025,1.324913786317445,0 103.9444764993472,1.324755896214998,0 103.9440963602139,1.322621551711744,0 103.9440232116073,1.322149744326491,0 103.9440175285316,1.321790382399257,0 103.9440684980469,1.32094045981299,0 103.9468872149849,1.321496614447697,0 103.9472326660768,1.321704931175153,0 103.9474110371363,1.321383420137136,0 103.9491091104928,1.322433394906687,0 103.9509044484915,1.321889594454233,0 103.951085156603,1.32239685916689,0 103.951251570028,1.322262854507025,0 103.9516252601999,1.323133026163297,0 103.9511428381654,1.32338696266019,0 103.9510498819826,1.323155327253078,0 103.9507754698469,1.323137520777609,0 103.9506958443687,1.324028448463035,0 103.9512181113588,1.324028423528527,0 103.9518643357348,1.324660948999163,0 103.9516532801744,1.324980849413077,0 103.9521553359155,1.325389352979392,0 103.951450168671,1.326324781002133,0 103.9522958410583,1.327109047844787,0 103.952449471682,1.326914297666435,0 103.9529230562526,1.32726334779463,0 103.9532236856526,1.326865184793426,0 103.953646983831,1.327179702331062,0 103.9517822989379,1.329969599748855,0 103.9509878012718,1.329305748970765,0 103.9497997060778,1.328447515691604,0 103.9476456407936,1.327602490793797,0 103.9444231747728,1.326409288350334,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00018">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Anchorvale Ln (Blk 312B) / Anchorvale Rd (Blk 310B)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161650.jpg">http://www.dengue.gov.sg/cms/ehd/20161650.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>71FC446ACF135C7A</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>33829.1248</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>41475.8905</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1528.251739</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>98838.792927</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.883611251328,1.390814477449088,0 103.8846988681607,1.390136746286839,0 103.8853651954291,1.389708732414338,0 103.8860587968803,1.390897117822358,0 103.8874644690174,1.390020723890311,0 103.8876054565351,1.389933414264381,0 103.8876657818557,1.390100238131757,0 103.8878703243502,1.390460637703375,0 103.8879095900627,1.39052427596066,0 103.8881937560064,1.390940497304361,0 103.8865816367354,1.391761746467993,0 103.8867658451768,1.392077083053779,0 103.8868979879472,1.392299998458804,0 103.8863471066912,1.392636355614259,0 103.8850164982171,1.393230071207017,0 103.8849689471988,1.393146323652051,0 103.8846192674797,1.392541683683719,0 103.883611251328,1.390814477449088,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00019">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Jln Bangau / Jln Jarak / Jln Selaseh / Jln Sindor / Kelulut Hill</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>16</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161529.jpg">http://www.dengue.gov.sg/cms/ehd/20161529.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>DE62BCE425977145</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>32349.1742</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>40560.5782</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2879.717354</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>257383.548977</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8766638777319,1.381206700092732,0 103.8750871429117,1.381870970254798,0 103.8739743363051,1.381970918276062,0 103.8740277446115,1.382324184529394,0 103.8748580506131,1.382296463971176,0 103.8748361790749,1.382542097744793,0 103.8749006171936,1.382772619885757,0 103.8746836377635,1.382845724341498,0 103.8747222806006,1.383083105635231,0 103.8748184638424,1.383069546625479,0 103.8748532219948,1.383452698791321,0 103.8746501096075,1.38349074985467,0 103.8747178079099,1.383884995276674,0 103.874697822585,1.383982401954656,0 103.8746365527336,1.384006252010644,0 103.8744105790021,1.384268490755235,0 103.8746614413752,1.384519426562001,0 103.874256303381,1.38483992755356,0 103.8734966708559,1.385483823340397,0 103.8732913480893,1.385218835536062,0 103.8732577328638,1.385248662029241,0 103.8730530155012,1.384966681193282,0 103.8727772843722,1.385211562263866,0 103.873151550231,1.385696390904445,0 103.8729213163622,1.385870538204989,0 103.8726422972744,1.385464235670717,0 103.8725866646518,1.385519750075828,0 103.8723660367454,1.38565183609962,0 103.8720255832542,1.38581263763156,0 103.8718796758084,1.385463903716545,0 103.8718054405814,1.385502989732451,0 103.8716142008916,1.385543652149041,0 103.8715339140516,1.385545609592335,0 103.8711088212776,1.385614528985691,0 103.870647352984,1.385668527778549,0 103.8705656750511,1.385146588063787,0 103.8702491272983,1.385196466911812,0 103.8702001335709,1.384862246403868,0 103.8701901469155,1.384753421728733,0 103.8700931376479,1.384233131789623,0 103.8700817232408,1.384070900824372,0 103.8700289392482,1.383845499773853,0 103.8699994545986,1.383631332368797,0 103.8703361048127,1.383564328207124,0 103.8702237942382,1.382960372176746,0 103.8701359854997,1.382961625188192,0 103.8700904466523,1.382672126320364,0 103.8700441503844,1.382679444250346,0 103.8696611927148,1.380886168688571,0 103.8766638777319,1.381206700092732,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00020">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Beach Rd / Fraser St</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>27</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161517.jpg">http://www.dengue.gov.sg/cms/ehd/20161517.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>85BE421782F1D66D</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>30800.3351</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>31294.276</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1203.987098</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>85669.66221</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8578991511862,1.301258426021489,0 103.8566417559994,1.299839832531273,0 103.8579710622444,1.298340237515407,0 103.8589383007229,1.297310158228075,0 103.8594633846351,1.297833087258908,0 103.860347406244,1.298569466829732,0 103.8602148518729,1.298720503489272,0 103.8598034735222,1.299283183686744,0 103.8594234023329,1.299781896872478,0 103.8585259533277,1.300740217918762,0 103.8578991511862,1.301258426021489,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00021">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Lor Ah Soo (Blk 129, 133, 135)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>3</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161575.jpg">http://www.dengue.gov.sg/cms/ehd/20161575.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>E91C8E1B4425BC6D</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>33991.1812</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>37001.6331</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2185.132618</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>221334.843013</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.885372040905,1.352722684150752,0 103.8854010329594,1.352591428649856,0 103.8852998719104,1.352555796175361,0 103.885476885146,1.351746375683291,0 103.8843852388191,1.351285476313469,0 103.8846086032892,1.349338768231036,0 103.885214147346,1.349303253595774,0 103.8851847455121,1.349007401468973,0 103.8852788830228,1.34899004922388,0 103.8862018166631,1.348557685322443,0 103.8863135246025,1.348829866615578,0 103.8888121323143,1.348912648523515,0 103.8888100718398,1.349623491348093,0 103.8889314631362,1.349623488558789,0 103.8889314714607,1.349990017343694,0 103.8892254173705,1.349991145539189,0 103.8892254231685,1.350245029454285,0 103.8893994034233,1.350700267789447,0 103.8893385138114,1.350726532837047,0 103.8899474466689,1.352363640822254,0 103.8898343666594,1.352389907107908,0 103.8891471868522,1.352477470062492,0 103.8894690529634,1.353405454888274,0 103.8890863214762,1.353528029508939,0 103.8888079674516,1.353466753515564,0 103.8888775496587,1.353195356803157,0 103.885763467755,1.352468790843156,0 103.8856938872403,1.352792714752352,0 103.885372040905,1.352722684150752,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00022">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>St. Patrick's Rd (Grand Duchess At St. Patrick's, St. Patrick's Residences)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>4</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161602.jpg">http://www.dengue.gov.sg/cms/ehd/20161602.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>D49E209A999B6E6E</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>37197.5932</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32287.2762</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1434.944599</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>109093.617012</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9172005435407,1.309889655747345,0 103.9156879941494,1.309586793192625,0 103.9143346425661,1.30931377486162,0 103.9146436800242,1.308506195032049,0 103.9140433796542,1.308368627338184,0 103.9142692170893,1.307842205201748,0 103.9139304313858,1.307692666044834,0 103.9143702185342,1.306645800909866,0 103.9166062446441,1.307233362116807,0 103.9181805310717,1.307567290617445,0 103.9172005435407,1.309889655747345,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00023">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Branksome Rd / Wilkinson Rd</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161652.jpg">http://www.dengue.gov.sg/cms/ehd/20161652.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>73D6BBDF7594CC86</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>9/1/2016 6:07:26 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>34564.4344</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>31771.5468</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2090.189292</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>182929.245384</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8930658485469,1.304561043372887,0 103.8929088974578,1.306497827310141,0 103.8909652183699,1.30633732746958,0 103.8908234304678,1.306301655375166,0 103.8908765847609,1.305623801454402,0 103.890516206719,1.305594079656351,0 103.8905516445686,1.305160014724364,0 103.8901912652955,1.305112454290096,0 103.8902857751998,1.304428653233014,0 103.8907170478699,1.304476212032291,0 103.8908738554613,1.302677683734812,0 103.8909982879493,1.302682498421134,0 103.8910413544249,1.302330862492756,0 103.891362011108,1.302369390952381,0 103.8915103563211,1.301579413521053,0 103.891869300698,1.301651659350002,0 103.8919889361507,1.301088078415505,0 103.8922186611712,1.301141058831199,0 103.8923861542567,1.30055339172558,0 103.8937740794347,1.300996514349079,0 103.8941952429911,1.301121744144327,0 103.893888966944,1.302070682916096,0 103.8942287688349,1.302142927958719,0 103.894113923885,1.302889551282434,0 103.8940373496045,1.302879918947674,0 103.8939751541757,1.303785500189828,0 103.8936353541128,1.303761422469214,0 103.8935444413058,1.304604383499579,0 103.8930658485469,1.304561043372887,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00024">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Bedok Rd / Jln Kathi</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161638.jpg">http://www.dengue.gov.sg/cms/ehd/20161638.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>9303B5CC1B0B8E47</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>41306.3321</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>34004.238</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1786.664167</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>113252.015548</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9507773873353,1.323137091113959,0 103.951056191338,1.323149549882773,0 103.9511305498483,1.323392738507763,0 103.9516323841055,1.323137050235472,0 103.9513969251376,1.322588318650408,0 103.9519171221426,1.322373557294711,0 103.9521125650549,1.322410762416066,0 103.952468745569,1.322058232807571,0 103.952852893077,1.322451063943723,0 103.9530871188548,1.322142239867636,0 103.9533446222023,1.322053178382993,0 103.95399907573,1.322226522727261,0 103.9542283128298,1.322182861538311,0 103.9546062463283,1.322170371829442,0 103.9539921120541,1.322954080084362,0 103.9537881864616,1.323246012884328,0 103.9548804502111,1.324317866779984,0 103.954391019964,1.324856124993928,0 103.9544771281768,1.324874366273946,0 103.9545839442785,1.324982167366664,0 103.9541100638849,1.325439986242447,0 103.9538970501525,1.325248421034372,0 103.9536342114386,1.325590531662116,0 103.9532121191186,1.325251333978465,0 103.9530042608443,1.325535827638267,0 103.9523969512464,1.32507060411074,0 103.9521522381689,1.325399028905079,0 103.9516491652039,1.324970291176535,0 103.9518621549097,1.324660112568663,0 103.9512185807249,1.324035243305219,0 103.950697401665,1.324030706582568,0 103.9507773873353,1.323137091113959,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00025">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Jln Hajijah (Landbay Condo, The Taipan)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161642.jpg">http://www.dengue.gov.sg/cms/ehd/20161642.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>4E302738304253DA</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>39436.5131</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32700.8826</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1820.244314</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>198352.598344</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9372199337037,1.314456499648781,0 103.9363080674004,1.314363060862009,0 103.9355312912931,1.314261119683176,0 103.9344336720137,1.314108204247398,0 103.9337582131022,1.314014754866339,0 103.9344082402341,1.311575856020619,0 103.9348809883503,1.309850780957059,0 103.9350245011566,1.309349404226151,0 103.9384609074764,1.310301017036824,0 103.9376758082694,1.313079834449517,0 103.937490057736,1.313037353452372,0 103.9372199337037,1.314456499648781,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00026">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Bedok Nth St 1 (Blk 213, 214)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161644.jpg">http://www.dengue.gov.sg/cms/ehd/20161644.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>62DE6B844B4DE754</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>39060.9522</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>34260.2851</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1775.235593</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>161897.330847</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9304103494714,1.326989316929423,0 103.9305413500533,1.326656520528364,0 103.9300983899803,1.326417933497254,0 103.9303167301081,1.325997225032879,0 103.9303728657651,1.325683269478409,0 103.9306099398758,1.325727213078486,0 103.9309093435213,1.32431440758574,0 103.9328433589669,1.324452470794812,0 103.9340599129675,1.32448381631046,0 103.9344280006823,1.324534034083199,0 103.9342720627645,1.325300087667477,0 103.9342034368415,1.325281253499555,0 103.9340849255475,1.325896608786848,0 103.9352952504339,1.326122605403308,0 103.9349709054459,1.327824250490867,0 103.933997655964,1.327711266868759,0 103.932986979018,1.327686192095519,0 103.9324067726576,1.327629703710226,0 103.9316331621767,1.327472758120206,0 103.9307971586568,1.327171395171965,0 103.9304103494714,1.326989316929423,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00027">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Eastwood Dr, Green, Pl, Walk / Eastwood Green (Eastwood Green Ter) / Eastwood Rd (Eastwood Ctr) / Taman Bedok</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>25</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161410.jpg">http://www.dengue.gov.sg/cms/ehd/20161410.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>774280CFBA3C9588</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/23/2016 6:06:27 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>41639.0245</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>33859.146</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2159.073246</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>204076.691018</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9560876755827,1.324859217110428,0 103.9552549678843,1.325558472729904,0 103.9550145279289,1.325227205769856,0 103.9548485217701,1.325235856059435,0 103.9544678324469,1.324870025790873,0 103.954393416098,1.324849865782617,0 103.9548756472582,1.324313879682374,0 103.9537905791693,1.323261853583145,0 103.9539818460829,1.322953586804729,0 103.9546073842528,1.322177771268335,0 103.9542408479459,1.322189702427227,0 103.9539985663421,1.322228395687173,0 103.9535411557887,1.322105901297138,0 103.953816013805,1.321720246863394,0 103.9535461083807,1.321559442642099,0 103.95435737596,1.320395627575317,0 103.9544062224342,1.320440695902028,0 103.954807139955,1.319674625016564,0 103.9556741146188,1.320092092098185,0 103.9557650688126,1.320152437517098,0 103.9558081736923,1.320255113090623,0 103.9564337436862,1.320114541347214,0 103.9565119409063,1.320114537450329,0 103.9565980301591,1.320152396104256,0 103.9563731538252,1.320613499275511,0 103.9568582770731,1.320822845842783,0 103.9573218906688,1.32115449846976,0 103.9577975694393,1.321652981756703,0 103.9580089390007,1.321795330405856,0 103.958397581578,1.322039937173697,0 103.9586757488105,1.322205026183516,0 103.9588968631579,1.322506507678064,0 103.9581391587931,1.323145226813191,0 103.9560876755827,1.324859217110428,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00028">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Jln Teck Whye (Blk 156, 157)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161622.jpg">http://www.dengue.gov.sg/cms/ehd/20161622.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>DC9C73111DACAD0B</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 8:08:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>19460.9296</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>40085.5704</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1456.906788</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>108971.919521</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7556951864983,1.380462773030021,0 103.7555025894275,1.379756996998607,0 103.7552764170817,1.379305535870004,0 103.755330020493,1.379059182725099,0 103.7553230217267,1.378555594078874,0 103.7550853481153,1.378176672447548,0 103.7546460938769,1.378136689546795,0 103.7547084566915,1.377531339718746,0 103.7547824057428,1.376813510977418,0 103.7553065996087,1.37691993479046,0 103.755806041359,1.37714063394372,0 103.7562743899044,1.377389374485554,0 103.7569504801029,1.377760917923953,0 103.7575017676633,1.378107093408249,0 103.7590868276762,1.378736651163655,0 103.7589898207213,1.378930283185242,0 103.7588323838573,1.379324738054869,0 103.7586988056882,1.37946507296226,0 103.7585336672531,1.379565813831601,0 103.7559818359678,1.380684388536733,0 103.7556951864983,1.380462773030021,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00029">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Joo Chiat Ln (Legenda At Joo Chiat) / Joo Chiat Pl</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161637.jpg">http://www.dengue.gov.sg/cms/ehd/20161637.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>838A540CF417C6D9</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 8:08:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>35613.6719</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32828.7433</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1996.571858</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>161229.448909</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9030118212846,1.313049207716065,0 103.9036008197366,1.313131361641404,0 103.9030876522039,1.313782877239374,0 103.9035541855908,1.313859165281131,0 103.9029341792039,1.314793022704582,0 103.9030429822443,1.314806160963479,0 103.9029385476741,1.315366841554368,0 103.9011328858723,1.315038916717895,0 103.8999312088514,1.314845668580723,0 103.8996222061128,1.314793113406998,0 103.8997092353175,1.314289377570417,0 103.8993370375205,1.314231250450501,0 103.8996093171533,1.313798429914263,0 103.8998984972072,1.313388289445623,0 103.8999275762199,1.313224770594565,0 103.8997254943383,1.31319127654926,0 103.9001985825297,1.312526066087736,0 103.9007667634324,1.311710105423011,0 103.9011685308731,1.311154964169336,0 103.9014205420779,1.311348773359698,0 103.9016637356109,1.311003018357182,0 103.901969551228,1.311237763860901,0 103.9021846441563,1.310916927529794,0 103.902415300958,1.311094290442928,0 103.9028374045985,1.310532946248173,0 103.9037497559347,1.311199913499942,0 103.9032297168367,1.311920759664603,0 103.9034288283301,1.31206133021377,0 103.9030989755703,1.312545882370145,0 103.9033337475178,1.312578777436412,0 103.9030118212846,1.313049207716065,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00030">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Choa Chu Kang Loop (Northvale)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>10</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161541.jpg">http://www.dengue.gov.sg/cms/ehd/20161541.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>EC1DCB5FC350F064</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>18093.2228</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>41004.7488</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1319.565985</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>83422.147368</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7436991119011,1.387800312379277,0 103.743189901075,1.387407170820688,0 103.7420802398143,1.386353943035937,0 103.741980181363,1.386103405278488,0 103.7419890254196,1.385978883879203,0 103.7421216603228,1.385467245647909,0 103.7430320978126,1.385743746330616,0 103.7431292762205,1.38588109386228,0 103.7433470160793,1.386124517839934,0 103.7435009533013,1.386278670593191,0 103.7437763104288,1.386340522338735,0 103.744048694167,1.386354917488731,0 103.7443331922158,1.386377056222194,0 103.7461305915923,1.386464943509678,0 103.7461213114446,1.386922110472113,0 103.7461089213432,1.387157715592434,0 103.746053640697,1.387532684186757,0 103.7459782769177,1.388003875359805,0 103.7459083541195,1.388153316047243,0 103.7458425444187,1.388293965571454,0 103.7457127483473,1.388571368684205,0 103.7455459580083,1.38869841913918,0 103.7452782172391,1.388724150004094,0 103.7440712924804,1.388080309201823,0 103.7436991119011,1.387800312379277,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00031">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Tampines St 22 (Blk 283, 284, 285, 286, 299B)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>7</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161613.jpg">http://www.dengue.gov.sg/cms/ehd/20161613.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>3E579CA5BACB9912</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>41339.5424</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>36822.1813</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1866.525273</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>147427.098357</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9507971174403,1.349742448344472,0 103.951050422781,1.349015281525587,0 103.9510503728768,1.347976490936272,0 103.9515101379075,1.347967024269859,0 103.9515100942164,1.347060442445947,0 103.9527861770205,1.347060379835428,0 103.9527861871385,1.347268138123342,0 103.9530582940487,1.347277568036384,0 103.9530677196787,1.348136931674623,0 103.9534336612714,1.348269123189949,0 103.9535087284522,1.348335223835627,0 103.9542405991555,1.348325744922349,0 103.9550100364673,1.34899619881828,0 103.9550077221625,1.349528475889855,0 103.9559273988842,1.349541226148062,0 103.9560842228965,1.349809944035733,0 103.9556731241007,1.349809964881882,0 103.9556691011912,1.350384170071683,0 103.955342617608,1.351025003288741,0 103.9542324639013,1.35102505913177,0 103.9542287923717,1.351206673373487,0 103.9540246437708,1.3514447759838,0 103.9536940816742,1.351076237672654,0 103.9533969141391,1.350805935824301,0 103.9530396891434,1.35058281388151,0 103.9529270912551,1.350526158438808,0 103.9520450757948,1.350205121615578,0 103.9507971174403,1.349742448344472,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00032">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Circuit Rd (Blk 85) / Paya Lebar Way (Blk 120, 121)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>4</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161600.jpg">http://www.dengue.gov.sg/cms/ehd/20161600.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>C712C9A81BAEFA22</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>33695.9147</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>33890.3864</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1652.653339</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>103230.705342</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8857287687268,1.323837207922614,0 103.884226417359,1.324050049888794,0 103.884115128122,1.323882043912672,0 103.8838035218417,1.323540434848408,0 103.8833917573202,1.323187625415912,0 103.882968867462,1.322946822555479,0 103.8815277069611,1.322325221862337,0 103.8816222872781,1.321697989999219,0 103.8816834823875,1.321098759713255,0 103.8831914134119,1.321709159351151,0 103.8847883731592,1.32229155435019,0 103.8853948831005,1.322397946411443,0 103.8861571895594,1.322420331307366,0 103.8874715836238,1.32247500689773,0 103.8874248571737,1.323599044033516,0 103.8857287687268,1.323837207922614,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00033">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Loyang Rise, View</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>38</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161321.jpg">http://www.dengue.gov.sg/cms/ehd/20161321.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>7645F2803F311F20</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>42812.8609</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>38356.1977</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2170.123381</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>190392.630346</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9630065580105,1.362018766992677,0 103.9633691142868,1.361911072186454,0 103.9635355391964,1.361958918365006,0 103.9636306164136,1.361558120758032,0 103.9642547069095,1.361713618908053,0 103.9645526587616,1.361270136959607,0 103.964814188331,1.361461547111065,0 103.9651588611163,1.360988598423643,0 103.9659287413182,1.361726466444552,0 103.9663380789717,1.361332891680111,0 103.9668941019765,1.361824801962389,0 103.9672518095714,1.36159105780599,0 103.9674609968043,1.361875403697927,0 103.9679305606542,1.361565437181416,0 103.9689148889242,1.362642140160065,0 103.9689705097866,1.362604270476656,0 103.9692715685556,1.363163580361218,0 103.9693294563394,1.363122793069113,0 103.9695726228022,1.363623843586897,0 103.9694336898769,1.363682114097842,0 103.9691268767165,1.363734568239204,0 103.9685654447802,1.364022875317041,0 103.9684299318932,1.36405159646328,0 103.9680020077345,1.364403361275608,0 103.9674457116724,1.36493459388685,0 103.9671105110505,1.36530070920028,0 103.9674885496521,1.365724213308328,0 103.9670748951809,1.366140582992074,0 103.9653662065303,1.364335286843966,0 103.965059902942,1.363996821870167,0 103.9643031625929,1.363338032127907,0 103.9630065580105,1.362018766992677,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00034">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>East Coast Rd (East Gr, Heritage East) / Lor N Telok Kurau (Eton Ct)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>4</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161550.jpg">http://www.dengue.gov.sg/cms/ehd/20161550.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>EA8E1DAA02766C89</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>36804.8909</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32363.583</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1953.284233</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>161637.133244</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9130882196118,1.310614946858657,0 103.9129063434088,1.310579428363749,0 103.9126983343764,1.31104603158672,0 103.9098335330109,1.310453903131821,0 103.9100058677006,1.309520704600247,0 103.9101485130395,1.309550610233319,0 103.9103802805031,1.308539644498456,0 103.9109366062969,1.308662027470388,0 103.9110600068577,1.308352942791262,0 103.9113039611377,1.308399152691016,0 103.9114876261537,1.307853200542256,0 103.9115392873913,1.307858976903864,0 103.911674168218,1.307538336781721,0 103.9124261204006,1.307700073909669,0 103.9129340698476,1.306273087316393,0 103.9134018879139,1.306379950082199,0 103.9143719637578,1.306625449953593,0 103.9139271434691,1.307688471711541,0 103.9142658113908,1.307835780711547,0 103.9140419673724,1.308375956348461,0 103.9146418062657,1.308497259074205,0 103.9142916930137,1.309401404590713,0 103.9143835341974,1.3094216204664,0 103.9140047169526,1.310279550275078,0 103.9132958148804,1.310138031160494,0 103.9130882196118,1.310614946858657,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00035">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Clementi West St 2 (Blk 705) / West Coast Rd (Blk 519, 703)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>7</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161516.jpg">http://www.dengue.gov.sg/cms/ehd/20161516.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>7E633879D908B51A</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/29/2016 5:42:38 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>19927.6708</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32120.6147</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1951.422709</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>202475.624449</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7581264024799,1.308327685220474,0 103.7597525907856,1.305879610442818,0 103.7609298732423,1.304220412661778,0 103.7614394922302,1.303246997923951,0 103.7626154977941,1.303953961978972,0 103.7624562596844,1.304326322146208,0 103.7624502029333,1.304570828558879,0 103.7630397279109,1.306003130004856,0 103.7631321726097,1.306278639885658,0 103.7631273820912,1.306550828919356,0 103.762991308725,1.306879472800599,0 103.7600829508579,1.30942637751357,0 103.7593186462359,1.310100987837598,0 103.7585465984753,1.30889449712324,0 103.7581177232559,1.308393287520214,0 103.7581264024799,1.308327685220474,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00036">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Pine Cl (Blk 12)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161604.jpg">http://www.dengue.gov.sg/cms/ehd/20161604.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>0B2E2F10402B6E2E</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/24/2016 6:31:22 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>33418.9346</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32301.5202</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1702.193214</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>143677.226023</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8808763386834,1.310117149300162,0 103.8809196196131,1.309336659370743,0 103.8803922706884,1.309236067888638,0 103.8804336263208,1.308993235309801,0 103.8798270029107,1.308833671596374,0 103.8798580198308,1.30868450243377,0 103.8796615466658,1.308129463267646,0 103.8802371432776,1.307914372938757,0 103.880021091583,1.307307133346058,0 103.8808427428411,1.307011768689679,0 103.8815470127117,1.306648897947236,0 103.8826369644739,1.306547614975168,0 103.8832070949386,1.30662354946122,0 103.8834921632257,1.306792315331046,0 103.8831651910921,1.307484281836349,0 103.8843557672618,1.308066515598866,0 103.8836012125203,1.309492643024735,0 103.8836096024209,1.309771115640623,0 103.8826789494872,1.309788011502418,0 103.8826789635208,1.31050528641509,0 103.8814800084649,1.310252153879966,0 103.8808763386834,1.310117149300162,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00037">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Jellicoe Rd (Blk 816) / King George's Ave (Blk 806)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161612.jpg">http://www.dengue.gov.sg/cms/ehd/20161612.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>2793A87C6673E7E6</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/25/2016 7:39:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>31049.4948</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32235.5308</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1938.450209</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>154859.142362</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8595523906791,1.307728283901234,0 103.8590954940058,1.30724211126606,0 103.85978899938,1.306567916437258,0 103.8593639875741,1.306145254322755,0 103.8596597667993,1.305798348694042,0 103.8599639067675,1.305351337912709,0 103.8602216912656,1.304966315461398,0 103.8624402696118,1.307087214709663,0 103.8630945900292,1.307849659625808,0 103.8626373603441,1.308305306547233,0 103.8628877748425,1.308535477048654,0 103.8619425518598,1.309646568747793,0 103.8618560039148,1.309587392641443,0 103.8616452827025,1.30991178159155,0 103.8614316525164,1.309723601107444,0 103.8606019998139,1.308842033876474,0 103.8595403034446,1.309895112775765,0 103.8591716037977,1.310064103491813,0 103.8584409677687,1.308961432718098,0 103.8582027956958,1.308939495219859,0 103.8590518200991,1.308212609846158,0 103.8595523906791,1.307728283901234,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00038">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Ang Mo Kio Ave 10 (Blk 574, 575)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161611.jpg">http://www.dengue.gov.sg/cms/ehd/20161611.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>D2F233F8CBDB9C7C</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/25/2016 7:39:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>30540.1749</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>39240.7157</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1766.96482</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>147132.571632</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8544469207125,1.372241706538865,0 103.8543086859316,1.371578470564095,0 103.8541530066375,1.37094530393501,0 103.8540806184346,1.370394868710225,0 103.8540692019477,1.369855052899165,0 103.855433994645,1.369471724040192,0 103.8568277848807,1.369112105644728,0 103.8568306116614,1.370299023956665,0 103.8579225670714,1.370299986024,0 103.8582701017773,1.370300292605803,0 103.8584683350933,1.370356635123524,0 103.8585256420811,1.370591413793178,0 103.8585327533607,1.371364149509259,0 103.8581850607474,1.37235999288654,0 103.8571189723634,1.372074882182027,0 103.8567984111583,1.373042798325043,0 103.8566027414903,1.37291514562691,0 103.8562209546192,1.372532868260409,0 103.8557592681544,1.373247367402105,0 103.8551796314136,1.372887650187631,0 103.8548492308569,1.372951060889575,0 103.8547581624557,1.372852291576376,0 103.8546162434626,1.372195028079177,0 103.8544469207125,1.372241706538865,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00039">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Jurong West St 75 (Blk 735, 737)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161621.jpg">http://www.dengue.gov.sg/cms/ehd/20161621.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>A1685653A0FA111C</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/25/2016 7:39:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>13284.0237</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>36500.7467</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1497.718962</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>103849.876251</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.6989705956146,1.346220714112267,0 103.6998082894338,1.344991459343464,0 103.7000355488205,1.344553396171791,0 103.7036693489583,1.346404923694023,0 103.7033896963752,1.346986205552445,0 103.7032026123758,1.347381342966066,0 103.7030199649051,1.347481465018254,0 103.7027164695645,1.347355717009164,0 103.7020599606884,1.347029148914878,0 103.7016432890795,1.34682188268302,0 103.70137348227,1.347221860096375,0 103.7010694791293,1.347667200209528,0 103.7008362072533,1.347940076882719,0 103.7006026618405,1.348052967351274,0 103.7000583240411,1.348121058499195,0 103.6999313054679,1.348136535985671,0 103.69982949582,1.347231042455039,0 103.6998212926179,1.347054081874967,0 103.6997355974966,1.346879950387503,0 103.6996012314897,1.346680716548828,0 103.6989705956146,1.346220714112267,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00040">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Pasir Ris St 51 (Blk 537, 540)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161597.jpg">http://www.dengue.gov.sg/cms/ehd/20161597.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>EAECFAC7EA59BD9E</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/25/2016 7:39:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>41003.4346</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>39069.9518</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1550.544775</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>116769.434506</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9492089700368,1.371642340226116,0 103.9488589240212,1.370717676516727,0 103.9485463623438,1.369497366688428,0 103.9483400767684,1.368773987073222,0 103.9495213093152,1.368270703635594,0 103.9511650341855,1.367566104773547,0 103.9515025303316,1.367446571164327,0 103.9519463826389,1.369484619221316,0 103.9516713849044,1.369560116407137,0 103.9512151378929,1.369692237433097,0 103.9507213951329,1.369893552085696,0 103.9512339384482,1.370717560040065,0 103.9508402463463,1.371963066453857,0 103.9500214605311,1.371340363742391,0 103.9492089700368,1.371642340226116,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00041">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Lor Melayu / Lor Mydin</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161618.jpg">http://www.dengue.gov.sg/cms/ehd/20161618.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>705001190E5FB595</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/25/2016 7:39:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>36590.9323</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>33893.1002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1709.024837</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>144723.755667</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9096630596352,1.324538245170213,0 103.9086218672412,1.324286127920763,0 103.9086715558874,1.323855162665045,0 103.9080560245839,1.323728201487874,0 103.9080674899322,1.323632003956687,0 103.908239512109,1.32293168378133,0 103.9084650455866,1.321869662544649,0 103.9090308763953,1.321988929035658,0 103.9090882127417,1.3216541616229,0 103.9102236964355,1.321881150769837,0 103.9103574856163,1.321157745069555,0 103.9108697909182,1.321261622349764,0 103.9109462528221,1.321250075743139,0 103.9112674006725,1.321338566668599,0 103.9114174844058,1.320834134022016,0 103.9127583593757,1.321135584441325,0 103.9124659892272,1.322772269790286,0 103.9124374683767,1.32303069265256,0 103.9123162376922,1.323633681986711,0 103.9110823797446,1.324452060120407,0 103.9097201080785,1.32422239252939,0 103.9096630596352,1.324538245170213,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00042">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Bedok South Ave 3 (Blk 159, 167) / Bedok South Rd (Blk 164)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>3</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161589.jpg">http://www.dengue.gov.sg/cms/ehd/20161589.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>A6396C411669FA4F</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/23/2016 6:06:27 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>40541.7331</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>33495.4711</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2181.366896</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>214857.932471</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9472370895228,1.321702290231495,0 103.9468835720945,1.321492980885294,0 103.9454013158663,1.321204772096549,0 103.9440658527718,1.320941780301517,0 103.9433574845507,1.320876146168327,0 103.9435018308493,1.32013019763969,0 103.9437724805749,1.320191791667571,0 103.9438784182692,1.31956966298485,0 103.9430660171557,1.319400836522694,0 103.9431101576538,1.319116435914996,0 103.9435163570594,1.31919640423333,0 103.9436929216186,1.318245436076738,0 103.9447702343188,1.318467575302203,0 103.9453617225318,1.316491451361096,0 103.9463892784947,1.316758060615449,0 103.9472592982834,1.316985038450194,0 103.947509922635,1.317046285737748,0 103.9479145039036,1.317233646516507,0 103.9481257463569,1.317327326916208,0 103.9484479773366,1.317453433494743,0 103.9477570413576,1.318772330434576,0 103.9483202044922,1.31911793913275,0 103.9482117665742,1.319392104479281,0 103.9481457799007,1.319669763213463,0 103.9480585803896,1.320225167227534,0 103.9480301017469,1.320284292174321,0 103.947553071414,1.321076206033981,0 103.9476103556117,1.321110980656514,0 103.9474814770449,1.321359625807719,0 103.9474420916768,1.321338006121662,0 103.9472370895228,1.321702290231495,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00043">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Toh Yi Dr (Blk 16, 17)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>4</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161620.jpg">http://www.dengue.gov.sg/cms/ehd/20161620.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>FE68947424B0F329</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/26/2016 8:14:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>21230.379</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>35710.428</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1579.805533</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>104031.09323</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7704694666255,1.340419992227977,0 103.7712274564292,1.339972641823339,0 103.7707919100089,1.339074041064291,0 103.7709817510043,1.338973447194802,0 103.7713680741467,1.338809993260902,0 103.7712670400263,1.338568318405473,0 103.7712365598248,1.33854073543173,0 103.7711305047154,1.338293839550018,0 103.7716133208795,1.338071558248767,0 103.7715581817095,1.337714233593017,0 103.7725680635198,1.337802034730065,0 103.7726246051702,1.337806745161901,0 103.7726318314089,1.337256781686063,0 103.7727247850524,1.337088714274302,0 103.773320176673,1.33756856465223,0 103.7733751422342,1.337647948365716,0 103.7734063992511,1.33795339537192,0 103.7734386475922,1.338139120883027,0 103.773970072885,1.338064386385783,0 103.7740047982151,1.338864120868686,0 103.7740976186596,1.339751799831923,0 103.7742222782865,1.33975726431592,0 103.7742933206324,1.340112123110176,0 103.7742758756489,1.340277219766168,0 103.7731635197626,1.340316834412468,0 103.7729198640385,1.340344263162806,0 103.7727131974474,1.340410017947664,0 103.7724059846613,1.340589862951714,0 103.7721595501056,1.340780423443764,0 103.771867951305,1.341076076193033,0 103.7714387126052,1.340811582255866,0 103.7708430706056,1.340588251531127,0 103.7704694666255,1.340419992227977,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00044">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Fernwood Ter (Fernwood Twrs) / Jln Sempadan (Villa Marina) / Jln Sempadan / Siglap Rd / Tay Lian Teck Dr / Upp East Coast Rd (Chiang's Ct) / Upp East Coast Rd</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>23</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161440.jpg">http://www.dengue.gov.sg/cms/ehd/20161440.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>32B993D6163E205D</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>38466.9497</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32594.9756</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>3538.100008</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>437579.843856</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9253592461583,1.312632515685548,0 103.9237126274752,1.312330287163726,0 103.9244117657204,1.311618212798421,0 103.9242832638803,1.311505056295891,0 103.9238335189616,1.311327244976165,0 103.9240342760903,1.310801841309988,0 103.9235029563065,1.310563748013378,0 103.9237644501725,1.309971520547478,0 103.9232176380085,1.309738241664423,0 103.9237011353442,1.308527664750254,0 103.9243749516008,1.308589292507747,0 103.9259777280759,1.309096249504856,0 103.9265317768048,1.306566239274872,0 103.9289652345531,1.307964512048924,0 103.9286922401725,1.309564961891461,0 103.9291058064658,1.309685519378802,0 103.9305730487177,1.31010738333346,0 103.9304290230844,1.312085143118832,0 103.9305534760863,1.312098323873607,0 103.9304814860528,1.313700308783551,0 103.9302837722391,1.313656835623159,0 103.9301956282199,1.314449997418885,0 103.9299255938796,1.314433367657418,0 103.9299035600089,1.3146996040579,0 103.9296445513296,1.314766172559334,0 103.9297768378963,1.315431754468943,0 103.9294241381317,1.315376302648599,0 103.9293745362459,1.315254279718948,0 103.9276220647072,1.315121230087984,0 103.9277873702648,1.31453328806976,0 103.9273464923098,1.314378001185742,0 103.9276991615197,1.313623655519265,0 103.9271425566152,1.313507199113738,0 103.9273684839489,1.312974720342556,0 103.9253592461583,1.312632515685548,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00045">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Lor K Telok Kurau (Nature Mans, The Vesta, Veranda) / Lor K, L Telok Kurau / Lor L Telok Kurau (Le Conney Pk)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>11</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161605.jpg">http://www.dengue.gov.sg/cms/ehd/20161605.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>BA35AD5A54AE5544</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>36783.3965</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32789.1081</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2428.338192</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>279974.675583</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9116544898546,1.314818243193769,0 103.9118631031631,1.314236014391734,0 103.9102636297656,1.313882369577225,0 103.9085304819849,1.313487609945804,0 103.908954924334,1.312535316323381,0 103.9087609425183,1.312490949602369,0 103.908972539692,1.311914110922438,0 103.9088038362218,1.311880835456273,0 103.9089274466027,1.311363986812569,0 103.9091271357473,1.310894991169118,0 103.9095360527744,1.31096676256628,0 103.9097642680335,1.310440340705161,0 103.9115251106331,1.310804737424522,0 103.9128741634677,1.311084237153112,0 103.9142408516075,1.311368172366547,0 103.9142188146919,1.31156340804768,0 103.9141078462424,1.311857937626286,0 103.9161191541312,1.312324467108671,0 103.9150636655631,1.314880012508866,0 103.9140869390918,1.314694084689861,0 103.9138261693766,1.315285859091964,0 103.9116544898546,1.314818243193769,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00046">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Toa Payoh Ctrl (Blk 79C)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161640.jpg">http://www.dengue.gov.sg/cms/ehd/20161640.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>E5620A6A931AF7FA</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>29687.2237</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>35202.2179</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1521.670143</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>109409.114869</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8465136663055,1.335462832465562,0 103.8467691219345,1.334997373646456,0 103.8469117486383,1.334590624965469,0 103.846914370743,1.334283792154406,0 103.8469042242919,1.334130319741602,0 103.8467810830964,1.333593324137611,0 103.8474972985685,1.33358202006037,0 103.8475031204973,1.333455995924908,0 103.8474908375919,1.333363191916504,0 103.8475654535165,1.333164394072046,0 103.8477742620053,1.333172782638353,0 103.8498132960512,1.333183585049806,0 103.8499084439621,1.333276882268734,0 103.8500692875521,1.333293123560588,0 103.8500558654797,1.333777086185868,0 103.8502971685265,1.33378268977532,0 103.85029856439,1.334235316066213,0 103.8500489117911,1.334212786448322,0 103.8500548142383,1.335118121302549,0 103.8502849436556,1.335094972507158,0 103.8502570608406,1.335405167012987,0 103.8495939576198,1.335403012799044,0 103.8495664601224,1.335428038556592,0 103.8495646237162,1.336013280875892,0 103.8495643233273,1.336108961737988,0 103.8495488774081,1.336153414069027,0 103.8490916659415,1.336148895240501,0 103.8490916576331,1.336114154982466,0 103.8481923529776,1.33610941180341,0 103.8481130660393,1.336112086490537,0 103.8481130780251,1.336163038386903,0 103.847888928253,1.336163090378016,0 103.8478886341004,1.3361080172942,0 103.8471388486746,1.336119275561122,0 103.8471044881005,1.335524201190947,0 103.8465136663055,1.335462832465562,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00047">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>S'goon Nth Ave 4 (Blk 517, 520, 522, 525, 526)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>5</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161577.jpg">http://www.dengue.gov.sg/cms/ehd/20161577.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>CF90051E0AB9262D</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>32467.7949</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>39344.0174</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1618.321647</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>140850.753258</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.870744859296,1.371392151591856,0 103.8729847866866,1.370840059833014,0 103.8753164666672,1.370325925057432,0 103.8753629632537,1.371308863941212,0 103.8756231894044,1.371313706720414,0 103.8756538751461,1.372208888191258,0 103.8753727284532,1.372208893179685,0 103.8753867717568,1.372542531811026,0 103.8753890537202,1.373444794951281,0 103.8735617467933,1.373508977666968,0 103.8733178206804,1.3736237274952,0 103.8723192977496,1.373644804022917,0 103.871585561003,1.372964319080257,0 103.8714034316554,1.372527402021284,0 103.8711603357886,1.372526335135712,0 103.8710851101344,1.371840356287191,0 103.8708886266929,1.371889797365085,0 103.870744859296,1.371392151591856,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00048">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Seletar Nth Lk</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161643.jpg">http://www.dengue.gov.sg/cms/ehd/20161643.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>D5BF9E2CA759B271</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>35011.2712</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>44400.8343</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1731.709133</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>134296.244077</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.896303996332,1.420975047861022,0 103.8953226136864,1.419015046033797,0 103.8956803269916,1.418799025551838,0 103.8959028944812,1.418286994288293,0 103.8958551886581,1.41792697757013,0 103.8955690026268,1.417518964607092,0 103.8949727891738,1.416926950913189,0 103.8940859863026,1.416438005986753,0 103.8938776363243,1.416338643638132,0 103.8943014722022,1.416064410478856,0 103.8948068758267,1.415804889967558,0 103.8956582248865,1.415421365467451,0 103.8962114463138,1.415120913687819,0 103.8964841854082,1.415319445648136,0 103.8968027635233,1.415725419183097,0 103.8970448708274,1.416188361536751,0 103.897308947066,1.416821197853454,0 103.8974723144706,1.417169121786632,0 103.8977329474625,1.417928609699219,0 103.8978035457819,1.418377938838236,0 103.8977754416577,1.41883698722028,0 103.8977266393802,1.419228978543959,0 103.8975076206516,1.419770189149622,0 103.8973295107469,1.420074011361791,0 103.8969660272983,1.420509841386183,0 103.896303996332,1.420975047861022,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00049">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Woodlands Dr 16 (Blk 581, 582)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161645.jpg">http://www.dengue.gov.sg/cms/ehd/20161645.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>D0A69D82327A8F7A</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>23884.1586</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>45721.0809</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1679.179576</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>142881.946393</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7942189396899,1.429217833708372,0 103.7941975787992,1.428978525163865,0 103.7950734805388,1.428958252422262,0 103.7950829917739,1.428926190177976,0 103.7950687343354,1.428459593472701,0 103.7952635257624,1.42819004391221,0 103.795653655177,1.428181059197867,0 103.7956962553061,1.4274835685367,0 103.7957808574804,1.427500316934477,0 103.7960991729203,1.427558068475128,0 103.7966122873199,1.427651162024662,0 103.796830863105,1.427680998675067,0 103.797086244004,1.427731922031908,0 103.7974021495683,1.427726654581419,0 103.7975157903172,1.428578902450714,0 103.7975913607218,1.428832798304674,0 103.7976317614779,1.428947199130232,0 103.7977780017672,1.42919906216824,0 103.7979224839859,1.429421924036242,0 103.7981053659807,1.429633273034863,0 103.7983003684101,1.429832851008113,0 103.7984903592083,1.429986834490701,0 103.7981143161983,1.430738066414662,0 103.7979146049194,1.430666279457007,0 103.7976792278315,1.430694989334275,0 103.7972655367912,1.430766766691531,0 103.797704328727,1.431653316741094,0 103.7976207970567,1.431665829113018,0 103.79729127243,1.431692569574494,0 103.7963895427716,1.431849824870199,0 103.7957974245925,1.431885406421737,0 103.7955380582578,1.43170935057426,0 103.7951713524592,1.43108600460986,0 103.7946876890325,1.430278941472289,0 103.7943803032988,1.429714749004408,0 103.7942189396899,1.429217833708372,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00050">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Corporation Walk / Kang Ching Rd (Blk 339B, 347, 348, 352, 355)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>9</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161583.jpg">http://www.dengue.gov.sg/cms/ehd/20161583.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>6F0D75AA21FF8DDE</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>15457.1218</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>35773.3637</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2062.696165</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>219220.530711</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7184057277539,1.33919797673133,0 103.7189963675024,1.338303906335228,0 103.7193426844805,1.338486696070934,0 103.7197215953536,1.337682611393444,0 103.7198792060719,1.337794122135952,0 103.7200941689833,1.337455011470598,0 103.7208038873611,1.337876584990665,0 103.7213779629815,1.336999250184512,0 103.7224571159101,1.337720867955808,0 103.7225466881933,1.337768884649443,0 103.7230356308099,1.338028653388486,0 103.7226834497273,1.338584787106947,0 103.7224396975065,1.338978525649294,0 103.7222758928565,1.339305707608097,0 103.7233497323089,1.340062126525351,0 103.7230664751071,1.340431752119364,0 103.7228844655271,1.340621092117292,0 103.7227276005038,1.340785140927534,0 103.7224105837227,1.341027756181459,0 103.7221186376978,1.341207408084531,0 103.7218613012018,1.341351661158786,0 103.7216959519045,1.341475487064243,0 103.7215096334039,1.341668202730734,0 103.7214358579232,1.34199017689782,0 103.7214174061034,1.342403582874769,0 103.721224419606,1.342451560370877,0 103.7206891945962,1.342382197222901,0 103.7201950417089,1.342237363185575,0 103.7198835706124,1.342105139880766,0 103.7196178444148,1.341911132619177,0 103.7188161449673,1.341261844874919,0 103.7183373607733,1.340841135377953,0 103.7176435156695,1.340273179918974,0 103.7178803326515,1.339901708825926,0 103.7182495540584,1.33938956401787,0 103.7184057277539,1.33919797673133,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00051">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Balam Rd (Blk 31, 32) / Circuit Rd (Blk 35, 37, 43, 45, 59, 64, 67)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>10</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161572.jpg">http://www.dengue.gov.sg/cms/ehd/20161572.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>8662C008DBEEFB76</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/31/2016 7:35:20 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>34008.1032</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>34365.4709</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>2759.963798</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>384325.052631</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8858133671821,1.330939797849163,0 103.8854856534474,1.330569686559722,0 103.8853417267053,1.330326337870321,0 103.8852265825003,1.329996077352598,0 103.885186276903,1.329694784745574,0 103.8851402079136,1.328958933494569,0 103.8850766127743,1.32736474237663,0 103.8848566916614,1.325587522040171,0 103.8847819807491,1.325163753889063,0 103.8846054030462,1.32467163781444,0 103.8845510715632,1.324562278696862,0 103.8844342540046,1.324332047164988,0 103.8842455744561,1.324047209789182,0 103.8879029282345,1.323535879027771,0 103.8880335687761,1.324434219993433,0 103.8887737467767,1.324317345118888,0 103.8886951554353,1.324628740281196,0 103.8905044501919,1.32517949018189,0 103.8902364383572,1.326505890236259,0 103.8900437272489,1.327570180276525,0 103.8897009530869,1.329199892165566,0 103.8886798115513,1.329067776950207,0 103.888669245492,1.329594688690836,0 103.8888937810995,1.329601329788391,0 103.8889003955875,1.330053303713905,0 103.8878833829412,1.330059973622072,0 103.887969246795,1.330618291782619,0 103.8858133671821,1.330939797849163,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00052">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Bayshore Rd (The Bayshore) / Upp East Coast Rd (East Coast Residences)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161636.jpg">http://www.dengue.gov.sg/cms/ehd/20161636.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>FC727105160B0D83</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>39811.2631</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32781.0995</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1760.329644</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>136699.039597</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9413395574431,1.314965688189838,0 103.9403116712102,1.314830056559167,0 103.938087397353,1.314592719061208,0 103.9383288656757,1.313247252489865,0 103.9376829233534,1.313088990828067,0 103.9384635456494,1.310301942993341,0 103.9386208184473,1.310347160836948,0 103.9393622474856,1.310561950891308,0 103.9411034827217,1.311065008578545,0 103.940508161431,1.312512246813199,0 103.9404126893279,1.312817522318054,0 103.9403733867751,1.31319628666102,0 103.9403790338461,1.313885972722763,0 103.941536115033,1.314236420231704,0 103.9413395574431,1.314965688189838,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00053">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Mattar Rd</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>5</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161593.jpg">http://www.dengue.gov.sg/cms/ehd/20161593.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>960055C79199B426</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>33465.0134</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>34207.9141</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1658.340625</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>160540.335538</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8802356738668,1.32759526522823,0 103.8808403456085,1.32567576571396,0 103.8813170984373,1.323756267644869,0 103.881445000004,1.322901857922757,0 103.8826427966333,1.323428524271208,0 103.8834452071685,1.323920083433467,0 103.8838173448338,1.324411652985998,0 103.8841429678133,1.325020263544984,0 103.8843290508185,1.325886371155802,0 103.8844802566184,1.327279167637541,0 103.8802356738668,1.32759526522823,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00054">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Kitchener Lk (City Sq Residences) / Tyrwhitt Rd</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161630.jpg">http://www.dengue.gov.sg/cms/ehd/20161630.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>D345DCB344831F9C</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>30801.7039</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>32553.6587</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1819.386602</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>126098.343304</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.855870163112,1.311263540143018,0 103.8573541839989,1.309746538666509,0 103.8579901518487,1.309149723227077,0 103.8582339951113,1.30894236897918,0 103.8584409677687,1.308961432718098,0 103.8587506893662,1.309422734228031,0 103.8591716037977,1.310064103491813,0 103.8595403034446,1.309895112775765,0 103.8606019998139,1.308842033876474,0 103.8614316525164,1.309723601107444,0 103.8600248631659,1.311376573551783,0 103.8596448048094,1.310859873393373,0 103.8591763333564,1.311339861690833,0 103.8588775008245,1.311575090017646,0 103.8589793410419,1.311709242418428,0 103.8580804165701,1.312461713647475,0 103.8579691738942,1.312321992226154,0 103.8577249555686,1.3125268811548,0 103.857509664805,1.312700589094892,0 103.8568567513081,1.311972511288157,0 103.8566753900303,1.312176501485661,0 103.855870163112,1.311263540143018,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00055">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Lor 8 Toa Payoh (Blk 226, 235)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161631.jpg">http://www.dengue.gov.sg/cms/ehd/20161631.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>2A72FA948A4997F7</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>30619.3105</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>35727.4912</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1650.652397</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>143812.885867</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8549901385986,1.339803839914523,0 103.8550454906617,1.339692185682515,0 103.8550542438784,1.338609288757611,0 103.8551087592632,1.33858916435321,0 103.855194659893,1.338511004790431,0 103.8553348500974,1.338383450157349,0 103.8555855135754,1.338155377114182,0 103.8558137914034,1.337947673252726,0 103.856007819023,1.33775996699578,0 103.856696935895,1.337072773733658,0 103.8569240682257,1.337279106820087,0 103.8571855893513,1.337488474595363,0 103.857226056827,1.337488533887315,0 103.8574827695636,1.337488471670881,0 103.8574855946087,1.337394256763349,0 103.8575705066392,1.337400803519663,0 103.8583308137171,1.337403167089545,0 103.8583224937995,1.337475603149248,0 103.8583221972426,1.337650037870287,0 103.8583661807791,1.337650037419186,0 103.8583659854648,1.337706419117914,0 103.8583524712033,1.338510291622675,0 103.8583524803366,1.339411182390537,0 103.8584119165465,1.339423145616248,0 103.8584042698944,1.339785194427701,0 103.8582453464066,1.33980364780637,0 103.8582342073179,1.339838298643304,0 103.8586071882784,1.340958991327694,0 103.8580185139248,1.341399303467838,0 103.8576435891228,1.341780945411332,0 103.8574081715388,1.341753225367159,0 103.8574090510092,1.340995231415237,0 103.8551841561495,1.340991259649279,0 103.8549901385986,1.339803839914523,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00056">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Fernvale Lk (Blk 430A)  /  Fernvale Lk (H20 Residences)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161632.jpg">http://www.dengue.gov.sg/cms/ehd/20161632.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>AE77D09CFA66829B</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>33091.2875</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>41752.7621</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1815.12791</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>168357.756922</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8790795651952,1.395777073130819,0 103.8767392002374,1.395223169600253,0 103.8768151803937,1.394334060971711,0 103.8771753586353,1.393691587850137,0 103.8771824773843,1.392973746204639,0 103.8772573683224,1.392962259380364,0 103.8775711978616,1.392962253473144,0 103.877561679823,1.392560981990438,0 103.8779492131538,1.392594473182461,0 103.877981306175,1.392418602744145,0 103.8780526287524,1.392307334787728,0 103.8780704558634,1.392127875200266,0 103.8780205279658,1.392070449049074,0 103.8781958792872,1.391548917159018,0 103.8782697897987,1.391630964152909,0 103.87909122922,1.391890321617075,0 103.8794108737661,1.392006403112453,0 103.8795906806917,1.392031532745142,0 103.8798616768054,1.392084670511243,0 103.8803135612497,1.392137152579577,0 103.8808962036508,1.392119821354451,0 103.8809261752058,1.392407142552024,0 103.880964285215,1.392919192560289,0 103.8811308932068,1.393400491576225,0 103.8813524376804,1.393747802528579,0 103.881695214784,1.394088158205478,0 103.8804706762689,1.394326241587836,0 103.8807433372076,1.395655168814326,0 103.8795683843266,1.395858428217807,0 103.8790795651952,1.395777073130819,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00057">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Clementi Ave 2 (Blk 333) / Clementi Ave 5 (Blk 322, 323)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>8</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161514.jpg">http://www.dengue.gov.sg/cms/ehd/20161514.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>768B3AD323732767</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/30/2016 7:50:21 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>20620.7305</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>33049.2235</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1509.236509</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>142848.843926</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.7649491011872,1.315750113352378,0 103.7651732664094,1.315206796597521,0 103.7654212906922,1.314631140409362,0 103.7657707841315,1.313866408842467,0 103.7661381212859,1.313383896261714,0 103.7682963411396,1.313210106895463,0 103.7686463156128,1.314104154128894,0 103.7689030420738,1.314661226496889,0 103.7691559845781,1.315088246660906,0 103.7686102795662,1.315419196285182,0 103.7686027627884,1.316201927746262,0 103.768296577225,1.316205434993462,0 103.7679066800266,1.317243067668681,0 103.7669888551389,1.316851429189366,0 103.7668471864862,1.316836412043102,0 103.7664111428448,1.316888802772471,0 103.7661332074732,1.316998914232651,0 103.7647851010401,1.316061038222765,0 103.7649491011872,1.315750113352378,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00058">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Jln Isnin</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>3</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161617.jpg">http://www.dengue.gov.sg/cms/ehd/20161617.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>D1D2A00AEC73CBD6</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/29/2016 5:42:38 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>28518.6783</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>37189.7817</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1681.258357</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>129190.064333</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.8356938801838,1.353007725875704,0 103.8358516848576,1.352754774085099,0 103.8367991804528,1.351030193368911,0 103.8373877249374,1.351470238998522,0 103.8374526973545,1.351459101640643,0 103.8376508229911,1.35120967306446,0 103.8392237255804,1.351036860167654,0 103.8392567172847,1.351057632433394,0 103.8392874678325,1.351389996230968,0 103.8398253226633,1.351336872478293,0 103.8399806003034,1.351841483887677,0 103.8400345217187,1.351989122133795,0 103.8402399113992,1.352473522647734,0 103.8405312182752,1.353265423063441,0 103.8397248653563,1.353511246051583,0 103.839049374814,1.353037677326408,0 103.8385897178204,1.353825311943475,0 103.8383819245228,1.353693457866334,0 103.8381945348456,1.353961331892606,0 103.8381204726729,1.3540672032685,0 103.8381020009337,1.354093608936967,0 103.837956099812,1.353935141064403,0 103.8376400544427,1.354174739433308,0 103.8374908756364,1.35416513172798,0 103.8372558578395,1.354144111075962,0 103.8372149650851,1.354156554292011,0 103.8370392570574,1.354144111418918,0 103.8370392574402,1.354396170438994,0 103.836938945285,1.35440115816093,0 103.8368661705091,1.354383703131463,0 103.8366399951505,1.354126253516171,0 103.8365183032384,1.35396202833914,0 103.8362635700956,1.353965582814545,0 103.8359736977697,1.354043674111708,0 103.8359015680317,1.353884728527898,0 103.8359292901989,1.353561788107509,0 103.8359407584328,1.353428207141322,0 103.8359522868414,1.353268591332216,0 103.8356938801838,1.353007725875704,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00059">
+      <name>Dengue_Cluster</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>SHAPE</td>
+<td>Polygon</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>DESCRIPTION</td>
+<td>Boon Keng Rd (Blk 9)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NAME</td>
+<td>Dengue_Cluster</td>
+</tr>
+<tr>
+<td>HYPERLINK</td>
+<td><a target="_blank" href="http://www.dengue.gov.sg/cms/ehd/20161625.jpg">http://www.dengue.gov.sg/cms/ehd/20161625.jpg</a></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>INC_CRC</td>
+<td>9A9E9D70E4519793</td>
+</tr>
+<tr>
+<td>FMEL_UPD_D</td>
+<td>8/29/2016 5:42:38 PM</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>X_ADDR</td>
+<td>31050.6334</td>
+</tr>
+<tr>
+<td>Y_ADDR</td>
+<td>33194.1926</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SHAPE_Length</td>
+<td>1183.919892</td>
+</tr>
+<tr>
+<td>SHAPE_Area</td>
+<td>85482.082297</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.859036312083,1.316401024832717,0 103.8594420618343,1.315899150695655,0 103.8605631416949,1.314374190922581,0 103.862539495542,1.316871049397459,0 103.8606509627102,1.318367768988675,0 103.859036312083,1.316401024832717,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+  </Folder>
+  <Style id="PolyStyle00">
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>ff6e6e6e</color>
+      <width>0.400000</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>ffbef7eb</color>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+</Document>
+</kml>
