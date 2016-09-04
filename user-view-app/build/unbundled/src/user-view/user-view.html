@@ -9,59 +9,7 @@
 
 </head><body><dom-module id="user-view">
   <template>
-    <style is="custom-style">
-        paper-scroll-header-panel {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-color: var(--paper-grey-200, #eee);;
-        }
-		paper-toolbar {
-            text-align: center;
-            padding: 8px 0px;
-            font-size: 5rem;
-            height: 5rem;
-		  background-color: var(--google-blue-500, #4285f4);
-		}
-		paper-toolbar .title {
-            font-size: 5rem;
-		  margin: 0 8px;
-		}
-		paper-scroll-header-panel .content {
-		  padding: 8px;
-		}
-        .content {
-
-            text-align:center;
-            margin: 8px 15px 8px 15px;
-        }
-		paper-button {
-            font-size: 25px;
-		  --paper-icon-button-ink-color: white;
-		}
-		.spacer {
-            @apply(--center-justified);
-		  @apply(--layout-flex);
-		}
-        .status-title {
-            @apply(--paper-font-display1);
-            margin: 8px;
-        }
-        google-map {
-            margin: 15px 8px;
-            height: 500px;
-        }
-        .premsg{
-            font-size: 16px;
-            font-family: "roboto";
-            margin: 8px;
-        }
-        .spacing {
-            margin: 100px 0 0 0; 
-        }
-    </style>
+    <style is="custom-style">paper-scroll-header-panel{position:absolute;top:0;right:0;bottom:0;left:0;background-color:var(--paper-grey-200, #eee);}paper-toolbar{text-align:center;background-color:var(--google-blue-500, #4285f4);}paper-toolbar .title{margin:0 8px;}paper-scroll-header-panel .content{padding:8px;}.content{text-align:center;margin:8px 15px 8px 15px;}paper-button{font-size:25px;--paper-icon-button-ink-color:white;}.spacer{@apply (--center-justified);@apply (--layout-flex);}.status-title{@apply (--paper-font-display1);margin:8px;}google-map{margin:15px 8px;height:500px;}.premsg{font-size:16px;font-family:"roboto";margin:8px;}.spacing{margin:100px 0 0 0;}</style>
       <paper-scroll-header-panel fixed="">
 
 		<paper-toolbar>
