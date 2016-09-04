@@ -26,6 +26,11 @@ Polymer({
             value: {},
             notify: true,
         },
+        locationResponse: {
+            type: Object,
+            value: {},
+            notify: true,
+        },
         showMap: {
             type: Boolean,
             value: false,

@@ -38,6 +38,7 @@
                 </div>
                 <iron-ajax id="safe-ajax" url="/emergency/respond/safe" params="[[getParams(uuid)]]" last-response="{{safeResponse}}" handle-as="json" debounce-duration="300"></iron-ajax>
                 <iron-ajax id="unsafe-ajax" url="/emergency/respond/unsafe" params="[[getParams(uuid)]]" last-response="{{unsafeResponse}}" handle-as="json" debounce-duration="300"></iron-ajax>
+                <iron-ajax id="location-ajax" url="/location/update" params="[[getLocationParams(uuid)]]" last-response="{{locationResponse}}" handle-as="json" debounce-duration="300"></iron-ajax>
              </div></template>
              <template is="dom-if" if="[[showZikaMap]]">
                  <div class="status-title">Current Zika virus hotspots</div>

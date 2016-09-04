@@ -96,6 +96,12 @@
                     last-response={{unsafeResponse}}
                     handle-as="json"
                     debounce-duration=300 ></iron-ajax>
+                <iron-ajax id="location-ajax"
+                    url = "/location/update"
+                    params = '[[getLocationParams(uuid)]]'
+                    last-response={{locationResponse}}
+                    handle-as="json"
+                    debounce-duration=300 ></iron-ajax>
              </template>
              <template is="dom-if" if="[[showZikaMap]]">
                  <div class="status-title">Current Zika virus hotspots</div>
