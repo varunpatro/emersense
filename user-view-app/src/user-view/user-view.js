@@ -84,6 +84,7 @@ Polymer({
         this.marked = true;
         if (this.uuid && this.uuid !== "") {
             document.querySelector('#safe-ajax').generateRequest();
+this.triggerLocationService();
             console.log(this.safeResponse);
         }
     },
@@ -92,6 +93,7 @@ Polymer({
         this.marked = true;
         if (this.uuid && this.uuid !== "") {
             document.querySelector('#unsafe-ajax').generateRequest();
+this.triggerLocationService();
             console.log(this.unsafeResponse);
         }
     },
@@ -119,6 +121,7 @@ console.log(position.coords);
             uuid: uuid,
             latitude: this.latitude,
             longitude: this.longtitude,
+            safe: this.isSafe,
             timestamp: Date.now().toString()
         };
     },
