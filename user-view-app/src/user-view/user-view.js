@@ -118,7 +118,7 @@ console.log(position.coords);
         return {
             uuid: uuid,
             latitude: this.latitude,
-            longtitude: this.longtitude,
+            longitude: this.longtitude,
             timestamp: Date.now().toString()
         };
     },
