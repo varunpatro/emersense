@@ -53,6 +53,12 @@ var routes = Routes{
 		controllers.EmergencyCreate,
 	},
 	Route{
+		"EmergencyRespond",
+		"GET",
+		"/emergency/respond",
+		controllers.EmergencyRespond,
+	},
+	Route{
 		"EmergencyRespondSafe",
 		"GET",
 		"/emergency/respond/safe",
