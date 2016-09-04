@@ -13,6 +13,7 @@ import (
 	"../models"
 	"fmt"
 	"github.com/gorilla/mux"
+	"io/ioutil"
 	"strconv"
 	"strings"
 )
@@ -127,7 +128,9 @@ func EmergencyRespondSafe(w http.ResponseWriter, r *http.Request) {
 
 	data.UpdateStatus(user.Id, true, emergency.SheetTitle)
 
-	w.Write([]byte("safely responded"))
+	b, _ := ioutil.ReadFile("user-view-app/build/unbundled/index.html")
+	w.Write(b)
+	//w.Write([]byte("safely responded"))
 	//delete(uuidToEmergency, uuidStr)
 	//delete(uuidToEmergency, uuidStr)
 	fmt.Println(*emergency)
@@ -165,7 +168,9 @@ func EmergencyRespondUnsafe(w http.ResponseWriter, r *http.Request) {
 
 	data.UpdateStatus(user.Id, false, emergency.SheetTitle)
 
-	w.Write([]byte("oh no! help coming to you soon!"))
+	b, _ := ioutil.ReadFile("user-view-app/build/unbundled/index.html")
+	w.Write(b)
+	//w.Write([]byte("oh no! help coming to you soon!"))
 	//delete(uuidToEmergency, uuidStr)
 	//delete(uuidToEmergency, uuidStr)
 	fmt.Println(*emergency)
