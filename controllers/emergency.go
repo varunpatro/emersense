@@ -14,9 +14,9 @@ import (
 	"fmt"
 	"github.com/gorilla/mux"
 	"io/ioutil"
+	"os"
 	"strconv"
 	"strings"
-	"os"
 )
 
 var twilio *gotwilio.Twilio
@@ -96,7 +96,13 @@ func EmergencyCreate(w http.ResponseWriter, r *http.Request) {
 
 	sendPhoneNotifs(&newEmergency)
 }
-
+func EmergencyRespond(w http.ResponseWriter, r *http.Request) {
+	b, _ := ioutil.ReadFile("user-view-app/build/unbundled/index.html")
+	w.Write(b)
+	//w.Write([]byte("safely responded"))
+	//delete(uuidToEmergency, uuidStr)
+	//delete(uuidToEmergency, uuidStr)
+}
 func EmergencyRespondSafe(w http.ResponseWriter, r *http.Request) {
 	uuidStr := r.URL.Query().Get("uuid")
 	if uuidStr == "" {
@@ -191,6 +197,6 @@ func sendPhoneNotifs(emergency *models.Emergency) {
 func sendClickLink(user models.User, uuidStr string) {
 	from := "+12016056631"
 	to := user.Phone
-	message := "Hi " + user.Name + ", click here to alert your safety: http://" + os.Getenv("EXTERNAL_IP") + ":8080/emergency/respond/safe?uuid=" + uuidStr
+	message := "Hi " + user.Name + ", click here to alert your safety: http://" + os.Getenv("EXTERNAL_IP") + ":8080/emergency/respond?uuid=" + uuidStr
 	fmt.Println(twilio.SendSMS(from, to, message, "", ""))
 }
