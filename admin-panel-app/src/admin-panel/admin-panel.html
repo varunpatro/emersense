@@ -28,8 +28,13 @@
 		paper-scroll-header-panel .content {
 		  padding: 8px;
 		}
-        .content {
+        .parent-of-content {
+            @apply(--layout-horizontal)
+            @apply(--layout-center-justified)
             text-align: center;
+        }
+        .content {
+            max-width: 700px;
             margin: 8px 8px 8px 8px;
         }
 		paper-icon-button {
@@ -51,6 +56,9 @@
             font-family: 'roboto';
             margin: 8px;
         }
+        .bldg {
+            padding: 50px 0 0;
+        }
     </style>
       <paper-scroll-header-panel fixed>
 
@@ -59,6 +67,7 @@
 		  <paper-icon-button icon="more-vert"></paper-icon-button>
 		</paper-toolbar>
 
+        <div class="parent-of-content">
         <div class="content">
         <template is="dom-if" if="[[!loggedIn]]">
                 <paper-input label="Email address" name="email" id="email-input"></paper-input>
@@ -69,11 +78,30 @@
         <template is="dom-if" if="[[loggedIn]]">
             <template is="dom-if" if="[[!alertSent]]">
                 <div class="content">
+                 <div class="bldg">
                 <div class="premsg">Building Location: 38 Beach Road, South, South Beach Tower</div>
                 <paper-button raised on-tap="sendAlert">Send Alert</paper-button>
                 <a href="[[sheetUrl]]" target="_blank">
                     <paper-button raised >View Responses</paper-button>
                 </a>
+                </div>
+                
+                 <div class="bldg">
+
+                <div class="premsg">Building Location: 22 College Ave East, Cinnamon College</div>
+                <paper-button raised on-tap="">Send Alert</paper-button>
+                <a href="[[sheetUrl]]" target="_blank">
+                    <paper-button raised >View Responses</paper-button>
+                </a>
+                </div>
+
+                 <div class="bldg">
+                <div class="premsg">Building Location: 20 Anson Road, Mapletree </div>
+                <paper-button raised on-tap="">Send Alert</paper-button>
+                <a href="[[sheetUrl]]" target="_blank">
+                    <paper-button raised >View Responses</paper-button>
+                </a>
+                 </div>
                 <iron-ajax id="send-alert-ajax"
                     url="/emergency/create"
                     handle-as="json"
@@ -81,6 +109,7 @@
                            on-response="onEmergencyResponse"
                     debounce-duration=300></iron-ajax>
                 </div>
+        </div>
             </template>
             <template is="dom-if" if="[[alertSent]]">
                 <paper-card>
