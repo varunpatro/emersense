@@ -76,4 +76,10 @@ var routes = Routes{
 		"/location/dangerzones",
 		controllers.LocationDangerZones,
 	},
+	Route{
+		"LocationAll",
+		"GET",
+		"/location/all",
+		controllers.LocationAll,
+	},
 }
