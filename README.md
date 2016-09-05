@@ -24,7 +24,7 @@ Emersense allows building administrators to track building occupants safety duri
 ### User Receives SMS
 
 <!--![User Receives SMS](http://i.imgur.com/GtLsAX.jpg)-->
-<img src="http://i.imgur.com/GtLsAX.jpg" width="250">
+<img src="http://i.imgur.com/ErQixcz.jpg" width="250">
 
 ### User Clicks Safe/Unsafe
 
